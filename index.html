@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+<meta name="author" content="AYTechnology">
+    
+    <!-- Australian SEO Meta Tags -->
+    <title>AYTechnology | Managed IT, Cybersecurity & VA Services Australia</title>
+    <meta name="description" content="Professional IT Support, Cybersecurity, CCTV, and Virtual Assistant services for Australian businesses. Secure, scalable technology solutions tailored to your needs.">
+    <meta name="keywords" content="Managed IT Services Australia, IT Support Australia, Virtual Assistant services Australia, Cybersecurity services Australia, CCTV installation Australia">
+
+    <!-- Australian JSON-LD LocalBusiness Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "AYTechnology",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "AU"
+      },
+      "telephone": "0423384874",
+      "url": "https://aytechnology.net"
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+  body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+    background-color: #f8fafc;
+  }
+
+  /* softer headings */
+  h1, h2, h3 {
+    letter-spacing: -0.03em;
+  }
+
+  /* cleaner card hover */
+  .card-hover {
+    transition: all 0.25s ease;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  }
+
+  /* subtle section spacing improvement */
+  section {
+    scroll-margin-top: 90px;
+  }
+</style>
+    <link rel="icon" href="./logo.png">
+<meta name="theme-color" content="#2563eb">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Sticky Navigation -->
+    <header class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-3">
+    <img src="./logo.png" alt="AYTechnology Logo" class="h-10 w-auto">
+    <span class="font-bold text-2xl tracking-tight text-slate-900">
+        AYTech<span class="text-blue-600">nology</span>
+    </span>
+</div>
+                
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-6 font-medium text-sm">
+                    <a href="#home" class="text-slate-600 hover:text-blue-600 transition">Home</a>
+                    <a href="#services" class="text-slate-600 hover:text-blue-600 transition">Services</a>
+                    <a href="#pricing" class="text-slate-600 hover:text-blue-600 transition">Pricing</a>
+                    <a href="#faq" class="text-slate-600 hover:text-blue-600 transition">FAQ</a>
+                    <a href="#contact" class="text-slate-600 hover:text-blue-600 transition">Contact</a>
+                </nav>
+                
+                <div class="hidden md:flex gap-4 items-center">
+                    <a href="tel:0423384874" class="text-slate-600 hover:text-blue-600 font-bold mr-2"><i class="fa-solid fa-phone mr-1"></i> 0423384874</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-blue-700 shadow-md transition duration-300">Get a Quote</a>
+                </div>
+                
+                <!-- Mobile Menu Hamburger Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-blue-600 focus:outline-none p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="hidden absolute top-20 left-0 w-full bg-white border-t border-slate-100 shadow-2xl md:hidden">
+            <div class="flex flex-col px-6 pt-4 pb-6 space-y-5">
+                <a href="#home" class="mobile-link text-slate-700 hover:text-blue-600 font-semibold text-lg">Home</a>
+                <a href="#services" class="mobile-link text-slate-700 hover:text-blue-600 font-semibold text-lg">Services</a>
+                <a href="#pricing" class="mobile-link text-slate-700 hover:text-blue-600 font-semibold text-lg">Pricing</a>
+                <a href="#faq" class="mobile-link text-slate-700 hover:text-blue-600 font-semibold text-lg">FAQ</a>
+                <a href="#contact" class="mobile-link text-slate-700 hover:text-blue-600 font-semibold text-lg">Contact</a>
+                <a href="tel:0423384874" class="text-blue-600 font-bold text-lg pt-2 border-t border-slate-100"><i class="fa-solid fa-phone mr-2"></i>0423384874</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-40 lg:pb-20 overflow-hidden bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight mb-6 leading-tight">
+                        Secure & Scale Your Business with <span class="text-blue-600">AYTechnology</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        From comprehensive IT Support and advanced CCTV monitoring to dedicated Virtual Assistants, we provide the ultimate technology foundation for modern operations in Australia.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#services" class="bg-blue-600 text-white px-8 py-3.5 rounded-lg font-bold hover:bg-blue-700 shadow-lg text-center transition duration-300">View Services</a>
+                        <a href="#contact" class="bg-white text-slate-800 border border-slate-200 px-8 py-3.5 rounded-lg font-bold hover:bg-slate-50 shadow-sm text-center transition duration-300">Contact Us</a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Cybersecurity and IT" class="rounded-2xl shadow-2xl w-full object-cover h-[400px] lg:h-[500px]">
+                </div>
+                <p class="mt-4 text-sm text-slate-500 font-medium">
+⚡ Free consultation within 24 hours • Australia-wide support
+</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Banner -->
+    <div class="bg-slate-900 py-8 border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-sm font-bold text-slate-400 uppercase tracking-widest mb-6">Certified & Trusted Technology Partners</p>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 items-center text-slate-500 opacity-80 text-2xl md:text-3xl">
+                <div class="flex items-center gap-2"><i class="fa-brands fa-microsoft"></i><span class="text-lg font-bold">Microsoft</span></div>
+                <div class="flex items-center gap-2"><i class="fa-brands fa-aws"></i><span class="text-lg font-bold">AWS Partner</span></div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-shield-halved"></i><span class="text-lg font-bold">CompTIA</span></div>
+                <div class="flex items-center gap-2"><i class="fa-solid fa-server"></i><span class="text-lg font-bold">Cisco</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">Our Core Solutions</h2>
+                <p class="mt-4 text-lg text-slate-600">Professional technology and support services tailored to your needs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 1. IT Support -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:-translate-y-1 hover:shadow-xl transition duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="IT Support" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <i class="fa-solid fa-headset text-blue-600 text-2xl mb-3"></i>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">IT Support</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Fast troubleshooting, hardware optimization, and comprehensive technical support.</p>
+                    </div>
+                </div>
+
+                <!-- 2. CCTV Monitoring -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:-translate-y-1 hover:shadow-xl transition duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="CCTV Monitoring" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <i class="fa-solid fa-video text-blue-600 text-2xl mb-3"></i>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">CCTV Monitoring</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Round-the-clock surveillance installation and active monitoring systems.</p>
+                    </div>
+                </div>
+
+                <!-- 3. Cybersecurity -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:-translate-y-1 hover:shadow-xl transition duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cybersecurity" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <i class="fa-solid fa-shield-halved text-blue-600 text-2xl mb-3"></i>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Cybersecurity</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Protect digital assets with advanced threat detection and endpoint security.</p>
+                    </div>
+                </div>
+
+                <!-- 4. Virtual Assistant -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:-translate-y-1 hover:shadow-xl transition duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Virtual Assistant" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <i class="fa-solid fa-user-tie text-blue-600 text-2xl mb-3"></i>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Virtual Assistant</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Highly trained remote professionals to handle your daily operations and admin.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Cloud Backup & Recovery -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:-translate-y-1 hover:shadow-xl transition duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cloud Backup" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <i class="fa-solid fa-cloud-arrow-up text-blue-600 text-2xl mb-3"></i>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Cloud Backup & Recovery</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Automated, encrypted data backups ensuring your business never loses critical information.</p>
+                    </div>
+                </div>
+
+                <!-- 6. AI Automation -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:-translate-y-1 hover:shadow-xl transition duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="AI Automation" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <i class="fa-solid fa-robot text-blue-600 text-2xl mb-3"></i>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">AI Automation Services</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Streamline workflows, social media management, and customer service using cutting-edge AI tools.</p>
+                    </div>
+                </div>
+
+                <!-- 7. Cloud Telephony & VoIP -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:-translate-y-1 hover:shadow-xl transition duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cloud Telephony" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <i class="fa-solid fa-phone-volume text-blue-600 text-2xl mb-3"></i>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Cloud Telephony (VoIP)</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Modernize your communications with flexible, cost-effective cloud-based phone systems.</p>
+                    </div>
+                </div>
+
+                <!-- 8. Website Maintenance -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:-translate-y-1 hover:shadow-xl transition duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Website Maintenance" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <i class="fa-solid fa-laptop-code text-blue-600 text-2xl mb-3"></i>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Website Hosting & Care</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Lightning-fast hosting on Edge networks with ongoing security updates and maintenance.</p>
+                    </div>
+                </div>
+
+                <!-- 9. Remote Network Monitoring -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-100 hover:-translate-y-1 hover:shadow-xl transition duration-300 group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Network Monitoring" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <i class="fa-solid fa-satellite-dish text-blue-600 text-2xl mb-3"></i>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Remote Network Monitoring</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">Proactive system tracking to detect and resolve hardware or software issues before they cause downtime.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / SLA Tiers -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">Service Plans</h2>
+                <p class="mt-4 text-lg text-slate-600">Transparent pricing and managed agreements for businesses of all sizes.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <!-- Basic -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 shadow-sm text-center">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">On-Demand</h3>
+                    <p class="text-slate-500 text-sm mb-6">Perfect for quick fixes</p>
+                    <p class="text-4xl font-extrabold text-slate-900 mb-6">Custom<span class="text-lg text-slate-500 font-normal">/quote</span></p>
+                    <ul class="text-left space-y-4 mb-8 text-slate-600 text-sm">
+                        <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> As-needed IT Support</li>
+                        <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Standard Response Time</li>
+                        <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Basic Hardware Diagnostics</li>
+                    </ul>
+                    <a href="#contact" class="block w-full bg-slate-200 text-slate-800 font-bold py-3 rounded-lg hover:bg-slate-300 transition">Get a Quote</a>
+                </div>
+                <!-- Pro (Highlighted) -->
+                <div class="bg-slate-900 rounded-2xl p-8 border border-blue-600 shadow-2xl text-center transform md:-translate-y-4 relative">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wide">Most Popular</div>
+                    <h3 class="text-xl font-bold text-white mb-2">Managed Pro</h3>
+                    <p class="text-slate-400 text-sm mb-6">For growing organizations</p>
+                    <p class="text-4xl font-extrabold text-white mb-6">Tiered<span class="text-lg text-slate-400 font-normal">/monthly</span></p>
+                    <ul class="text-left space-y-4 mb-8 text-slate-300 text-sm">
+                        <li><i class="fa-solid fa-check text-blue-400 mr-2"></i> 24/7 Active Monitoring</li>
+                        <li><i class="fa-solid fa-check text-blue-400 mr-2"></i> Priority Remote Support</li>
+                        <li><i class="fa-solid fa-check text-blue-400 mr-2"></i> Advanced Cybersecurity</li>
+                        <li><i class="fa-solid fa-check text-blue-400 mr-2"></i> CCTV Maintenance</li>
+                    </ul>
+                    <a href="#contact" class="block w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-500 transition">Contact Sales</a>
+                </div>
+                <!-- Enterprise -->
+                <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200 shadow-sm text-center">
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Enterprise & VA</h3>
+                    <p class="text-slate-500 text-sm mb-6">Complete operations takeover</p>
+                    <p class="text-4xl font-extrabold text-slate-900 mb-6">Custom<span class="text-lg text-slate-500 font-normal">/retainer</span></p>
+                    <ul class="text-left space-y-4 mb-8 text-slate-600 text-sm">
+                        <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Dedicated Virtual Assistants</li>
+                        <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Full Infrastructure Setup</li>
+                        <li><i class="fa-solid fa-check text-blue-600 mr-2"></i> Dedicated Account Manager</li>
+                    </ul>
+                    <a href="#contact" class="block w-full bg-slate-200 text-slate-800 font-bold py-3 rounded-lg hover:bg-slate-300 transition">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-slate-100 py-10 text-center">
+    <p class="text-sm text-slate-500 uppercase tracking-widest">
+        Trusted by small businesses across Australia
+    </p>
+    <p class="text-lg font-semibold text-slate-800 mt-2">
+        Fast response • Secure systems • Reliable support
+    </p>
+</div>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-blue-700 p-8 rounded-2xl">
+                    <i class="fa-solid fa-quote-left text-blue-400 text-4xl mb-4 opacity-50"></i>
+                    <p class="text-lg mb-6 leading-relaxed">"AYTechnology completely overhauled our network security and installed a flawless CCTV system. Their team is fast, professional, and highly knowledgeable."</p>
+                    <div>
+                        <p class="font-bold text-xl">Mark D.</p>
+                        <p class="text-blue-300 text-sm">Operations Director</p>
+                    </div>
+                </div>
+                <div class="bg-blue-700 p-8 rounded-2xl">
+                    <i class="fa-solid fa-quote-left text-blue-400 text-4xl mb-4 opacity-50"></i>
+                    <p class="text-lg mb-6 leading-relaxed">"Hiring a Virtual Assistant through them saved me over 20 hours a week. They matched me with someone perfectly trained for my exact administrative needs."</p>
+                    <div>
+                        <p class="font-bold text-xl">Sarah L.</p>
+                        <p class="text-blue-300 text-sm">Business Owner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-blue-600 text-white p-10 text-center">
+  <h2 class="text-2xl font-bold mb-3">Get a Free IT Consultation</h2>
+  <p class="mb-6">Tell us your issue and we’ll respond within 24 hours</p>
+  <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold">
+    Request Callback
+  </a>
+</div>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-slate-50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Frequently Asked Questions</h2>
+            </div>
+            <div class="space-y-4">
+                <details class="group bg-white p-6 rounded-xl shadow-sm border border-slate-100 cursor-pointer">
+                    <summary class="font-bold text-lg text-slate-900 outline-none flex justify-between items-center">
+                        Do you offer remote IT support?
+                        <span class="transition group-open:rotate-180 text-blue-600">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p class="text-slate-600 mt-4 leading-relaxed border-t border-slate-100 pt-4">Yes, we provide highly secure remote troubleshooting for software issues, network configurations, and routine maintenance to resolve your problems quickly without an on-site visit.</p>
+                </details>
+                <details class="group bg-white p-6 rounded-xl shadow-sm border border-slate-100 cursor-pointer">
+                    <summary class="font-bold text-lg text-slate-900 outline-none flex justify-between items-center">
+                        How does the Virtual Assistant service work?
+                        <span class="transition group-open:rotate-180 text-blue-600">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p class="text-slate-600 mt-4 leading-relaxed border-t border-slate-100 pt-4">We consult with you to understand your exact administrative or operational needs. We then assign a fully vetted, highly trained remote professional to integrate seamlessly into your daily workflow.</p>
+                </details>
+                <details class="group bg-white p-6 rounded-xl shadow-sm border border-slate-100 cursor-pointer">
+                    <summary class="font-bold text-lg text-slate-900 outline-none flex justify-between items-center">
+                        Are your CCTV installations monitored 24/7?
+                        <span class="transition group-open:rotate-180 text-blue-600">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </summary>
+                    <p class="text-slate-600 mt-4 leading-relaxed border-t border-slate-100 pt-4">We offer hardware installation as well as comprehensive monitoring packages. We can set up secure cloud access so you can view your cameras from your phone anywhere in the world.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Ready to Upgrade?</h2>
+                <p class="text-lg text-slate-600 mb-8">Reach out to us directly or fill out the form below to discuss your business needs.</p>
+                
+                <div class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 p-6 bg-blue-50 rounded-xl border border-blue-100 mb-10">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-blue-600">
+                            <i class="fa-solid fa-envelope text-xl"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-sm font-bold text-slate-500 uppercase tracking-wider">Email Us</p>
+                            <a href="mailto:inquiry@aytechnology.net" class="text-lg font-semibold text-slate-900 hover:text-blue-600">inquiry@aytechnology.net</a>
+                        </div>
+                    </div>
+                    
+                    <div class="hidden md:block w-px h-12 bg-blue-200"></div>
+
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm text-blue-600">
+                            <i class="fa-solid fa-phone text-xl"></i>
+                        </div>
+                        <div class="text-left">
+                            <p class="text-sm font-bold text-slate-500 uppercase tracking-wider">Call Us</p>
+                            <a href="tel:0423384874" class="text-lg font-semibold text-slate-900 hover:text-blue-600">0423384874</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-8 text-left max-w-2xl mx-auto">
+                <form action="https://formspree.io/f/xeewwaor" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Full Name</label>
+                            <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none bg-slate-50" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-2">Email Address</label>
+                            <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none bg-slate-50" placeholder="john@company.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-2">Service Needed</label>
+                        <!-- Updated dropdown options to include all 9 services -->
+                        <select name="service" class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none bg-slate-50">
+                            <option>IT Support</option>
+                            <option>CCTV Monitoring</option>
+                            <option>Cybersecurity</option>
+                            <option>Virtual Assistant</option>
+                            <option>Cloud Backup & Recovery</option>
+                            <option>AI Automation Services</option>
+                            <option>Cloud Telephony (VoIP)</option>
+                            <option>Website Hosting & Care</option>
+                            <option>Remote Network Monitoring</option>
+                            <option>Other / General Inquiry</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-2">How can we help?</label>
+                        <textarea name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-600 focus:border-blue-600 outline-none bg-slate-50" placeholder="Tell us about your requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3.5 rounded-lg hover:bg-blue-700 shadow-md transition duration-300">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-12 text-center">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="text-sm">&copy; 2026 AYTechnology. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/61423384874?text=Hi%20AYTechnology,%20I%20want%20a%20free%20IT%20consultation" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:-translate-y-1 transition duration-300 z-50">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript for Mobile Menu Toggle (Bulletproof Method) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobileMenu');
+            const links = document.querySelectorAll('.mobile-link');
+
+            // Open/Close menu when the hamburger icon is tapped
+            btn.addEventListener('click', function() {
+                menu.classList.toggle('hidden');
+            });
+
+            // Automatically close the menu after tapping a link
+            links.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    menu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
