@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Keep this noindex tag so search engines don't index your thank you page -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="icon" href="./logo.png">
+    
+    <title>Thank You | AY Technology</title>
+
+    <!-- Frameworks, Fonts & Icons -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        background-color: #f8fafc;
+      }
+      h1, h2, h3 {
+        letter-spacing: -0.03em;
+      }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <!-- Simple Header -->
+    <header class="w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center items-center h-20">
+                <!-- Logo linking back to home -->
+                <a href="/" class="flex-shrink-0 flex items-center gap-3 transition-opacity hover:opacity-80">
+                    <img src="./logo.png" alt="AY Technology Logo" class="h-10 w-auto">
+                    <span class="font-bold text-2xl tracking-tight text-slate-900">
+                        AYTech<span class="text-blue-600">nology</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-lg w-full bg-white p-10 rounded-2xl shadow-xl border border-slate-100 text-center">
+            
+            <!-- Success Icon -->
+            <div class="mx-auto flex items-center justify-center h-20 w-20 rounded-full bg-green-100 mb-6">
+                <i class="fa-solid fa-check text-4xl text-green-600"></i>
+            </div>
+            
+            <h1 class="text-3xl font-extrabold text-slate-900 mb-4">Message Sent!</h1>
+            
+            <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                Thank you for reaching out to <strong>AY Technology</strong>. We have received your inquiry and one of our experts will get back to you within 24 hours.
+            </p>
+            
+            <div class="space-y-4">
+                <a href="/" class="block w-full bg-blue-600 text-white font-bold py-3.5 rounded-lg hover:bg-blue-700 shadow-md transition duration-300">
+                    Return to Homepage
+                </a>
+                
+                <!-- Optional secondary action -->
+                <p class="text-sm text-slate-500 mt-6">
+                    Need immediate assistance? <br class="hidden sm:block">
+                    Call us directly at <a href="tel:0423384874" class="font-bold text-blue-600 hover:underline">0423 384 874</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-8 text-center mt-auto">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="text-sm">&copy; 2026 AY Technology. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

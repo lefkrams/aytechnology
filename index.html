@@ -61,18 +61,7 @@
       gtag('js', new Date());
       gtag('config', 'AW-18252641116');
 
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof(url) != 'undefined') {
-            window.location = url;
-          }
-        };
-        gtag('event', 'conversion', {
-            'send_to': 'AW-18252641116/riZ5CJfBl8McENzmxP9D',
-            'event_callback': callback
-        });
-        return false;
-      }
+      
     </script>
 
     <!-- Frameworks, Fonts & Icons -->
@@ -487,7 +476,9 @@
             </div>
             
             <div class="bg-white rounded-2xl shadow-xl border border-slate-100 p-8 text-left max-w-2xl mx-auto">
-                <form action="https://formspree.io/f/xeewwaor" method="POST" class="space-y-6" onsubmit="return gtag_report_conversion();">
+                <form action="https://formspree.io/f/xeewwaor" method="POST" class="space-y-6">
+                    <input type="hidden" name="_next" value="https://aytechnology.net/thanks.html">
+                    
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm font-medium text-slate-700 mb-2">Full Name</label>
