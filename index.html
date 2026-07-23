@@ -142,7 +142,13 @@
                 
                 <!-- Mobile Menu Hamburger Button -->
                 <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" class="text-slate-600 hover:text-blue-600 focus:outline-none p-2">
+                    <button
+                     id="mobile-menu-btn"
+                     type="button"
+                     aria-label="Open navigation menu"
+                     aria-controls="mobileMenu"
+                     aria-expanded="false"
+                     class="text-slate-600 hover:text-blue-600 focus:outline-none p-2">
                         <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -187,8 +193,12 @@
                     </div>
                 </div>
                 <div class="relative">
-                    <img src="./ayt.jpeg" class="rounded-2xl shadow-2xl w-full object-cover h-[400px] lg:h-[500px]">
-                </div>
+                    <img
+                     src="./ayt.jpeg"
+                     alt="AY Technology providing managed IT and cybersecurity support for Australian businesses"
+                     class="rounded-2xl shadow-2xl w-full object-cover h-[400px] lg:h-[500px]">
+                    </div>
+                    
                     <p class="mt-4 text-sm text-slate-500 font-medium">
                      ⚡ Perth-based support • Remote assistance available • Response within 24 hours
                     </p>
@@ -224,6 +234,82 @@
     </div>
 
 </div>
+
+     <!-- About Section -->
+<section id="about" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            <div>
+                <p class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-3">
+                    About AY Technology
+                </p>
+
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                    Practical Technology Support for Australian Businesses
+                </h2>
+
+                <p class="text-lg text-slate-600 leading-relaxed mb-5">
+                    AY Technology helps small and medium-sized businesses improve the reliability, security and efficiency of their technology.
+                </p>
+
+                <p class="text-slate-600 leading-relaxed mb-8">
+                    We provide managed IT support, cybersecurity, CCTV, cloud solutions, automation and virtual-assistant services tailored to each business. Support is available locally across Perth and remotely throughout Australia.
+                </p>
+
+                <a href="#contact"
+                   class="inline-block bg-blue-600 text-white px-7 py-3 rounded-lg font-bold hover:bg-blue-700 shadow-md transition">
+                    Discuss Your Requirements
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+                    <i class="fa-solid fa-location-dot text-blue-600 text-2xl mb-4"></i>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">
+                        Perth-Focused
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Local support for businesses throughout Perth and Western Australia.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+                    <i class="fa-solid fa-headset text-blue-600 text-2xl mb-4"></i>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">
+                        Remote Support
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Secure remote assistance for businesses across Australia.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+                    <i class="fa-solid fa-shield-halved text-blue-600 text-2xl mb-4"></i>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">
+                        Security Minded
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Technology recommendations that consider security and business continuity.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6">
+                    <i class="fa-solid fa-sliders text-blue-600 text-2xl mb-4"></i>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">
+                        Flexible Solutions
+                    </h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Services shaped around your team, systems and operational requirements.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Services Section -->
     <section id="services" class="py-20 bg-slate-50">
@@ -715,15 +801,22 @@ class="w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-c
 
             // Open/Close menu when the hamburger icon is tapped
             btn.addEventListener('click', function() {
-                menu.classList.toggle('hidden');
-            });
+    const isHidden = menu.classList.toggle('hidden');
+    btn.setAttribute('aria-expanded', String(!isHidden));
+    btn.setAttribute(
+        'aria-label',
+        isHidden ? 'Open navigation menu' : 'Close navigation menu'
+    );
+});
 
             // Automatically close the menu after tapping a link
             links.forEach(function(link) {
-                link.addEventListener('click', function() {
-                    menu.classList.add('hidden');
-                });
-            });
+    link.addEventListener('click', function() {
+        menu.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.setAttribute('aria-label', 'Open navigation menu');
+    });
+});
         });
     </script>
 
