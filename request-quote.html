@@ -348,7 +348,67 @@
         submitButton.disabled=true;submitButton.textContent='Submitting...';formStatus.className='mt-5 text-sm font-semibold text-blue-600';formStatus.textContent='Submitting your quote request...';
         try{
           if(API_URL.includes('REPLACE-WITH-YOUR-QUOTE-WORKER'))throw new Error('Add your Cloudflare Worker URL in the API_URL setting before publishing.');
-          const payload=new FormData(form);payload.append('service',selectedService);selectedFiles.forEach(f=>payload.append('files',f,f.name));
+          const payload = new FormData(form);
+
+/*
+ * Convert the quote form fields into the field names
+ * already recognised by the existing contact Worker.
+ */
+payload.set("service", selectedService);
+payload.set("name", String(payload.get("fullName") || ""));
+payload.set("company", String(payload.get("businessName") || ""));
+
+/*
+ * Create one complete quote summary for the email message.
+ */
+const excludedFields = new Set([
+  "cf-turnstile-response",
+  "consent",
+  "files",
+  "name",
+  "company",
+  "message"
+]);
+
+const quoteSummary = [];
+
+quoteSummary.push("AY TECHNOLOGY QUOTE REQUEST");
+quoteSummary.push("==========================");
+quoteSummary.push("");
+
+for (const [key, value] of payload.entries()) {
+  if (excludedFields.has(key)) continue;
+  if (value instanceof File) continue;
+
+  const cleanValue = String(value).trim();
+  if (!cleanValue) continue;
+
+  quoteSummary.push(`${humanize(key)}: ${cleanValue}`);
+}
+
+quoteSummary.push("");
+quoteSummary.push(
+  `Uploaded Files: ${
+    selectedFiles.length
+      ? selectedFiles.map(file => file.name).join(", ")
+      : "No files uploaded"
+  }`
+);
+
+/*
+ * The current Worker should already place "message"
+ * inside the notification email.
+ */
+payload.set("message", quoteSummary.join("\n"));
+
+/*
+ * Add the selected uploaded files.
+ */
+payload.delete("files");
+
+selectedFiles.forEach(file => {
+  payload.append("files", file, file.name);
+});
           const response=await fetch(API_URL,{method:'POST',body:payload});
           const result=await response.json().catch(()=>({}));
           if(!response.ok)throw new Error(result.error||'Submission failed.');
