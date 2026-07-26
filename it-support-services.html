@@ -1,989 +1,145 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <link rel="canonical" href="https://aytechnology.net/it-support-services">
-
-<title>IT Support Services Australia | AYTechnology</title>
-
-<meta name="description" content="Reliable IT support services for Australian businesses. AYTechnology provides remote IT support, troubleshooting, network solutions, cybersecurity assistance, cloud support and business technology services.">
-
+<meta name="theme-color" content="#2563eb">
+<title>IT Support Perth | Managed IT Services | AY Technology</title>
+<meta name="description" content="Reliable IT support and managed IT services for Perth businesses. Get remote support, network help, Microsoft 365 assistance, cybersecurity and cloud solutions.">
 <meta name="robots" content="index, follow">
-
-
-<!-- Open Graph Social Cards -->
-
-<meta property="og:title" content="IT Support Services Australia | AYTechnology">
-
-<meta property="og:description" content="Professional IT support solutions helping Australian businesses stay secure, connected and productive.">
-
+<meta property="og:title" content="IT Support Perth | Managed IT Services | AY Technology">
+<meta property="og:description" content="Reliable IT support and managed IT services for small and medium-sized businesses across Perth and Western Australia.">
 <meta property="og:image" content="https://aytechnology.net/IT%20support.jpg">
-
 <meta property="og:url" content="https://aytechnology.net/it-support-services">
-
 <meta property="og:type" content="website">
-
-
-<!-- Twitter Card -->
-
 <meta name="twitter:card" content="summary_large_image">
-
-<meta name="twitter:title" content="IT Support Services Australia | AYTechnology">
-
-<meta name="twitter:description" content="Reliable remote IT support, cybersecurity, networking and business technology solutions.">
-
+<meta name="twitter:title" content="IT Support Perth | Managed IT Services | AY Technology">
+<meta name="twitter:description" content="Remote and on-site IT support, networking, Microsoft 365, cybersecurity and cloud solutions for Perth businesses.">
 <meta name="twitter:image" content="https://aytechnology.net/IT%20support.jpg">
-
-
 <link rel="icon" href="./logo.png">
-
-
-<!-- Service Schema -->
-
 <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@type":"Service",
- "name":"IT Support Services",
- "provider":{
-   "@type":"Organization",
-   "name":"AYTechnology",
-   "url":"https://aytechnology.net"
- },
- "areaServed":"Australia",
- "description":"Professional IT support services including remote support, troubleshooting, networking, cybersecurity assistance and business technology solutions."
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aytechnology.net/#organization",
+      "name": "AY Technology",
+      "url": "https://aytechnology.net/",
+      "logo": "https://aytechnology.net/logo.png",
+      "email": "inquiry@aytechnology.net",
+      "telephone": "+61423384874"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://aytechnology.net/it-support-services#service",
+      "name": "Managed IT Support Services in Perth",
+      "serviceType": "Managed IT Support",
+      "url": "https://aytechnology.net/it-support-services",
+      "image": "https://aytechnology.net/IT%20support.jpg",
+      "description": "Remote and on-site IT support for Perth businesses, including troubleshooting, network support, Microsoft 365 assistance, cybersecurity support, cloud services and computer maintenance.",
+      "provider": {"@id": "https://aytechnology.net/#organization"},
+      "areaServed": [
+        {"@type": "City", "name": "Perth"},
+        {"@type": "AdministrativeArea", "name": "Western Australia"},
+        {"@type": "Country", "name": "Australia"}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://aytechnology.net/"},
+        {"@type": "ListItem", "position": 2, "name": "IT Support Services", "item": "https://aytechnology.net/it-support-services"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type":"Question","name":"Do you provide remote IT support?","acceptedAnswer":{"@type":"Answer","text":"Yes. AY Technology provides secure remote troubleshooting and technical support for software, Microsoft 365, systems, networks and common business technology problems."}},
+        {"@type":"Question","name":"Do you provide on-site IT support in Perth?","acceptedAnswer":{"@type":"Answer","text":"On-site assistance is available for suitable jobs across Perth and surrounding areas. Availability depends on the issue, location and required equipment."}},
+        {"@type":"Question","name":"Can you support small businesses?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our IT support is designed for small and medium-sized businesses that need practical, flexible assistance without maintaining a large internal IT team."}},
+        {"@type":"Question","name":"Do you offer managed IT support and one-off assistance?","acceptedAnswer":{"@type":"Answer","text":"Yes. Businesses can request help with an individual issue or discuss ongoing managed support for users, devices, networks, security and cloud services."}},
+        {"@type":"Question","name":"What IT services do you provide?","acceptedAnswer":{"@type":"Answer","text":"Services include remote IT support, computer troubleshooting, network support, Microsoft 365 assistance, cybersecurity support, cloud backup, device maintenance and business technology advice."}}
+      ]
+    }
+  ]
 }
 </script>
-
-
 <script src="https://cdn.tailwindcss.com"></script>
-
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
-rel="stylesheet">
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <style>
-
-body {
-font-family:'Inter',sans-serif;
-background:#f8fafc;
-}
-
-h1,h2,h3 {
-letter-spacing:-0.03em;
-}
-
-section {
-scroll-margin-top:100px;
-}
-
+body{font-family:'Inter',sans-serif;background:#f8fafc}h1,h2,h3{letter-spacing:-.03em}section{scroll-margin-top:100px}
 </style>
-
-
 </head>
-
-
 <body class="text-slate-800">
-
-
-<!-- HEADER -->
-
 <header class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="h-20 flex justify-between items-center">
-
-
-<a href="/" class="flex items-center gap-3" aria-label="AY Technology homepage">
-
-<img src="./logo.png"
-class="h-10"
-alt="AYTechnology Logo">
-
-<span class="font-bold text-2xl text-slate-900">
-AYTech<span class="text-blue-600">nology</span>
-</span>
-
-</a>
-
-
-<nav class="hidden md:flex gap-8 font-medium text-sm">
-
-<a href="#services" class="hover:text-blue-600">
-Services
-</a>
-
-<a href="#process" class="hover:text-blue-600">
-How It Works
-</a>
-
-<a href="#contact" class="hover:text-blue-600">
-Contact
-</a>
-
-</nav>
-
-
-<a href="/request-quote.html"
-class="hidden md:block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700">
-
-Get Quote
-
-</a>
-
-
-</div>
-
-</div>
-
-</header>
-
-
-
-
-<!-- HERO -->
-
-<section class="pt-36 pb-20 bg-white">
-
-
-<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-
-
-<div>
-
-
-<h1 class="text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
-
-Reliable
-
-<span class="text-blue-600">
-IT Support Services
-</span>
-
-For Australian Businesses
-
-</h1>
-
-
-
-<p class="mt-6 text-lg text-slate-600 leading-relaxed">
-
-AYTechnology provides professional IT support to help businesses stay secure, productive and connected. From troubleshooting and remote assistance to networks, cybersecurity and cloud solutions, we keep your technology running smoothly.
-
-</p>
-
-
-
-<div class="mt-8 flex flex-col sm:flex-row gap-4">
-
-
-<a href="#contact"
-class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-center shadow-lg hover:bg-blue-700">
-
-Get IT Support
-
-</a>
-
-
-<a href="#services"
-class="border border-slate-300 px-8 py-4 rounded-lg font-bold text-center">
-
-Our Services
-
-</a>
-
-
-</div>
-
-
-<p class="mt-6 text-sm text-slate-500">
-
-✓ Fast response support  
-✓ Business-focused solutions  
-✓ Reliable technology partner
-
-</p>
-
-
-</div>
-
-
-
-
-<div>
-
-<img src="./IT support.jpg"
-alt="IT Support Services Australia"
-class="rounded-2xl shadow-2xl w-full h-[450px] object-cover">
-
-</div>
-
-
-</div>
-
-
-</section>
-<!-- TRUST BANNER -->
-
-<section class="bg-slate-900 py-10">
-
-<div class="max-w-7xl mx-auto px-6 text-center">
-
-<p class="text-slate-400 uppercase tracking-widest text-sm font-bold mb-5">
-Helping Businesses Stay Connected
-</p>
-
-
-<div class="flex flex-wrap justify-center gap-10 text-white text-lg font-semibold">
-
-
-<div>
-<i class="fa-solid fa-headset text-blue-400 mr-2"></i>
-Fast Support
-</div>
-
-
-<div>
-<i class="fa-solid fa-network-wired text-blue-400 mr-2"></i>
-Reliable Networks
-</div>
-
-
-<div>
-<i class="fa-solid fa-shield-halved text-blue-400 mr-2"></i>
-Cyber Security
-</div>
-
-
-<div>
-<i class="fa-solid fa-cloud text-blue-400 mr-2"></i>
-Cloud Solutions
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-
-
-<!-- SERVICES -->
-
-<section id="services" class="py-20 bg-white">
-
-
-<div class="max-w-7xl mx-auto px-6">
-
-
-<div class="text-center mb-12">
-
-<h2 class="text-3xl font-bold text-slate-900">
-Our IT Support Services
-</h2>
-
-<p class="mt-4 text-slate-600 text-lg">
-Complete technology support designed for modern businesses.
-</p>
-
-</div>
-
-
-
-<div class="grid md:grid-cols-3 gap-8">
-
-
-
-<div class="bg-slate-50 p-8 rounded-2xl shadow-sm">
-
-<i class="fa-solid fa-laptop-medical text-blue-600 text-4xl mb-5"></i>
-
-<h3 class="text-xl font-bold mb-3">
-Remote IT Support
-</h3>
-
-<p class="text-slate-600">
-Quick assistance for software issues, system errors, troubleshooting and everyday technology problems.
-</p>
-
-</div>
-
-
-
-
-<div class="bg-slate-50 p-8 rounded-2xl shadow-sm">
-
-<i class="fa-solid fa-server text-blue-600 text-4xl mb-5"></i>
-
-<h3 class="text-xl font-bold mb-3">
-Network Support
-</h3>
-
-<p class="text-slate-600">
-Reliable network setup, maintenance and monitoring to keep your business connected.
-</p>
-
-</div>
-
-
-
-
-<div class="bg-slate-50 p-8 rounded-2xl shadow-sm">
-
-<i class="fa-solid fa-lock text-blue-600 text-4xl mb-5"></i>
-
-<h3 class="text-xl font-bold mb-3">
-Cybersecurity Support
-</h3>
-
-<p class="text-slate-600">
-Protect your business with security solutions, risk management and technology best practices.
-</p>
-
-</div>
-
-
-
-
-<div class="bg-slate-50 p-8 rounded-2xl shadow-sm">
-
-<i class="fa-solid fa-cloud text-blue-600 text-4xl mb-5"></i>
-
-<h3 class="text-xl font-bold mb-3">
-Cloud Support
-</h3>
-
-<p class="text-slate-600">
-Support for cloud platforms, backups, access management and business continuity.
-</p>
-
-</div>
-
-
-
-
-<div class="bg-slate-50 p-8 rounded-2xl shadow-sm">
-
-<i class="fa-solid fa-computer text-blue-600 text-4xl mb-5"></i>
-
-<h3 class="text-xl font-bold mb-3">
-Computer Maintenance
-</h3>
-
-<p class="text-slate-600">
-Keep your computers running efficiently with regular maintenance and optimisation.
-</p>
-
-</div>
-
-
-
-
-<div class="bg-slate-50 p-8 rounded-2xl shadow-sm">
-
-<i class="fa-solid fa-business-time text-blue-600 text-4xl mb-5"></i>
-
-<h3 class="text-xl font-bold mb-3">
-Business IT Solutions
-</h3>
-
-<p class="text-slate-600">
-Technology solutions tailored around your business goals and workflow.
-</p>
-
-</div>
-
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-
-
-
-<!-- BENEFITS -->
-
-<section class="py-20 bg-slate-50">
-
-
-<div class="max-w-7xl mx-auto px-6">
-
-
-<div class="text-center mb-12">
-
-<h2 class="text-3xl font-bold text-slate-900">
-Why Choose AYTechnology?
-</h2>
-
-</div>
-
-
-
-<div class="grid md:grid-cols-4 gap-8 text-center">
-
-
-<div>
-<i class="fa-solid fa-clock text-blue-600 text-4xl mb-4"></i>
-<h3 class="font-bold text-lg">Save Time</h3>
-<p class="text-slate-600 mt-2">
-Focus on your business while we handle your technology.
-</p>
-</div>
-
-
-
-<div>
-<i class="fa-solid fa-user-shield text-blue-600 text-4xl mb-4"></i>
-<h3 class="font-bold text-lg">Secure Support</h3>
-<p class="text-slate-600 mt-2">
-Professional solutions focused on protecting your systems.
-</p>
-</div>
-
-
-
-<div>
-<i class="fa-solid fa-chart-line text-blue-600 text-4xl mb-4"></i>
-<h3 class="font-bold text-lg">Improve Productivity</h3>
-<p class="text-slate-600 mt-2">
-Reliable technology helps your team work better.
-</p>
-</div>
-
-
-
-<div>
-<i class="fa-solid fa-handshake text-blue-600 text-4xl mb-4"></i>
-<h3 class="font-bold text-lg">Trusted Partner</h3>
-<p class="text-slate-600 mt-2">
-Ongoing support for your business technology needs.
-</p>
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-
-
-
-<!-- PROCESS -->
-
-<section id="process" class="py-20 bg-white">
-
-
-<div class="max-w-6xl mx-auto px-6">
-
-
-<div class="text-center mb-12">
-
-<h2 class="text-3xl font-bold text-slate-900">
-How It Works
-</h2>
-
-</div>
-
-
-
-<div class="grid md:grid-cols-3 gap-8">
-
-
-<div class="text-center">
-
-<div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">
-1
-</div>
-
-<h3 class="font-bold text-xl mb-3">
-Contact Us
-</h3>
-
-<p class="text-slate-600">
-Tell us about your IT challenges and business requirements.
-</p>
-
-</div>
-
-
-
-
-<div class="text-center">
-
-<div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">
-2
-</div>
-
-<h3 class="font-bold text-xl mb-3">
-Find The Solution
-</h3>
-
-<p class="text-slate-600">
-We analyse your needs and recommend the right technology solution.
-</p>
-
-</div>
-
-
-
-
-<div class="text-center">
-
-<div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">
-3
-</div>
-
-<h3 class="font-bold text-xl mb-3">
-Stay Supported
-</h3>
-
-<p class="text-slate-600">
-Receive ongoing support to keep your systems running smoothly.
-</p>
-
-</div>
-
-
-
-</div>
-
-</div>
-
-</section>
-<!-- COMMON IT SUPPORT NEEDS -->
-
-<section class="py-20 bg-blue-600 text-white">
-
-    <div class="max-w-7xl mx-auto px-6">
-
-        <div class="text-center mb-12">
-
-            <h2 class="text-3xl font-bold">
-                Common IT Problems We Help Solve
-            </h2>
-
-            <p class="mt-4 text-lg text-blue-100 max-w-2xl mx-auto">
-                Practical technical support designed to reduce disruptions and keep your business systems working reliably.
-            </p>
-
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8">
-
-            <div class="bg-blue-700 p-8 rounded-2xl">
-
-                <i class="fa-solid fa-computer text-blue-300 text-3xl mb-4"></i>
-
-                <h3 class="text-xl font-bold mb-3">
-                    Slow or Unreliable Computers
-                </h3>
-
-                <p class="text-blue-100 leading-relaxed">
-                    Troubleshoot performance problems, software errors and hardware issues affecting your team’s productivity.
-                </p>
-
-            </div>
-
-            <div class="bg-blue-700 p-8 rounded-2xl">
-
-                <i class="fa-solid fa-wifi text-blue-300 text-3xl mb-4"></i>
-
-                <h3 class="text-xl font-bold mb-3">
-                    Network and Connectivity Issues
-                </h3>
-
-                <p class="text-blue-100 leading-relaxed">
-                    Resolve unstable internet connections, Wi-Fi coverage problems and business network interruptions.
-                </p>
-
-            </div>
-
-            <div class="bg-blue-700 p-8 rounded-2xl">
-
-                <i class="fa-solid fa-envelope text-blue-300 text-3xl mb-4"></i>
-
-                <h3 class="text-xl font-bold mb-3">
-                    Email and Account Problems
-                </h3>
-
-                <p class="text-blue-100 leading-relaxed">
-                    Assist with email configuration, login problems, account access and common Microsoft 365 issues.
-                </p>
-
-            </div>
-
-            <div class="bg-blue-700 p-8 rounded-2xl">
-
-                <i class="fa-solid fa-cloud-arrow-up text-blue-300 text-3xl mb-4"></i>
-
-                <h3 class="text-xl font-bold mb-3">
-                    Backup and Cloud Support
-                </h3>
-
-                <p class="text-blue-100 leading-relaxed">
-                    Help configure cloud services, secure backups and file recovery processes for important business information.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-
-<!-- CTA -->
-
-<section class="bg-blue-600 text-white py-12 text-center">
-
-<h2 class="text-3xl font-bold mb-3">
-Need Reliable IT Support?
-</h2>
-
-<p class="mb-6 text-lg">
-Tell us your requirements and we will respond within 24 hours.
-</p>
-
-
-<a href="#contact"
-class="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold">
-
-Request IT Support
-
-</a>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- FAQ -->
-
-<section id="faq" class="py-20 bg-slate-50">
-
-
-<div class="max-w-4xl mx-auto px-6">
-
-
-<h2 class="text-3xl font-bold text-center mb-12">
-Frequently Asked Questions
-</h2>
-
-
-
-<div class="space-y-5">
-
-
-
-<details class="bg-white p-6 rounded-xl shadow-sm">
-
-<summary class="font-bold text-lg cursor-pointer">
-Do you provide remote IT support?
-</summary>
-
-<p class="mt-4 text-slate-600">
-Yes. We provide remote troubleshooting and technical support for software issues, systems, networks and business technology problems.
-</p>
-
-</details>
-
-
-
-
-<details class="bg-white p-6 rounded-xl shadow-sm">
-
-<summary class="font-bold text-lg cursor-pointer">
-Can you support small businesses?
-</summary>
-
-<p class="mt-4 text-slate-600">
-Yes. Our IT solutions are designed to support small and medium businesses with flexible technology services.
-</p>
-
-</details>
-
-
-
-
-<details class="bg-white p-6 rounded-xl shadow-sm">
-
-<summary class="font-bold text-lg cursor-pointer">
-What IT services do you provide?
-</summary>
-
-<p class="mt-4 text-slate-600">
-We provide IT support, networking, cybersecurity assistance, cloud support, computer maintenance and business technology solutions.
-</p>
-
-</details>
-
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-
-
-
-
-
-<!-- CONTACT -->
-
-<section id="contact" class="py-20 bg-white">
-
-
-<div class="max-w-4xl mx-auto px-6">
-
-
-<div class="text-center mb-10">
-
-<h2 class="text-3xl font-bold text-slate-900">
-Ready To Improve Your IT?
-</h2>
-
-
-<p class="text-slate-600 mt-4">
-Contact AYTechnology today and discuss your IT requirements.
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="bg-white rounded-2xl shadow-xl border p-8">
-
-<form id="contact-form" class="space-y-5">
-
-
-<input type="hidden" name="service" value="IT Support">
-
-
-
-<input
-type="text"
-name="name"
-required
-placeholder="Your Name"
-class="w-full px-5 py-3 border rounded-lg">
-
-
-
-<input
-type="email"
-name="email"
-required
-placeholder="Your Email"
-class="w-full px-5 py-3 border rounded-lg">
-
-
-
-<input
-type="text"
-name="company"
-placeholder="Business Name"
-class="w-full px-5 py-3 border rounded-lg">
-
-
-
-<input
-type="tel"
-name="phone"
-placeholder="Phone Number"
-class="w-full px-5 py-3 border rounded-lg">
-
-
-
-<textarea
-name="message"
-rows="5"
-required
-placeholder="Tell us about your IT needs..."
-class="w-full px-5 py-3 border rounded-lg"></textarea>
-
-
-
-<div class="cf-turnstile"
-                     data-sitekey="0x4AAAAAAD6Vo3rObkvgXX-0">
-                    </div>
-<button
-type="submit"
-class="w-full bg-blue-600 text-white py-4 rounded-lg font-bold hover:bg-blue-700">
-
-Send Enquiry
-
-</button>
-
-
-</form>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- SOCIAL MEDIA SECTION -->
-
-<section class="py-12 bg-slate-50">
-
-<div class="max-w-7xl mx-auto px-6 text-center">
-
-<h2 class="text-2xl font-bold text-slate-900 mb-6">
-Follow AYTechnology
-</h2>
-
-<p class="text-slate-600 mb-8">
-Stay updated with our latest technology solutions and business support services.
-</p>
-
-
-<div class="flex justify-center gap-5">
-
-
-<a href="https://www.facebook.com/profile.php?id=61591770420755&sk=directory_basic_info" 
-class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl hover:bg-blue-700 transition">
-<i class="fa-brands fa-facebook-f"></i>
-</a>
-
-
-
-<a href="https://www.linkedin.com/in/ay-technology-b42830421/" 
-class="w-12 h-12 bg-sky-500 text-white rounded-full flex items-center justify-center text-xl hover:bg-sky-600 transition">
-<i class="fa-brands fa-linkedin-in"></i>
-</a>
-
-
-
-
-
-<a href="https://www.instagram.com/aytech_support/" 
-class="w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center text-xl hover:bg-pink-700 transition">
-<i class="fa-brands fa-instagram"></i>
-</a>
-
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-
-<!-- FOOTER -->
-
-
-<footer class="bg-slate-950 text-slate-400 py-12 text-center">
-
-    <p class="text-sm">
-        © 2026 AY Technology. All rights reserved.
-    </p>
-
-    <a href="/privacy-policy"
-       class="text-xs hover:text-blue-400 mt-2 inline-block underline">
-        Privacy Policy
-    </a>
-
-</footer>
-
-
-
-
-
-
-
-
-<!--CLOUDWORKER REDIRECT -->
-
-
+<div class="max-w-7xl mx-auto px-6"><div class="h-20 flex justify-between items-center">
+<a href="/" class="flex items-center gap-3" aria-label="AY Technology homepage"><img src="./logo.png" class="h-10" alt="AY Technology Logo"><span class="font-bold text-2xl text-slate-900">AYTech<span class="text-blue-600">nology</span></span></a>
+<nav class="hidden md:flex gap-8 font-medium text-sm"><a href="/" class="hover:text-blue-600">Home</a><a href="#services" class="hover:text-blue-600">Services</a><a href="#process" class="hover:text-blue-600">How It Works</a><a href="#contact" class="hover:text-blue-600">Contact</a></nav>
+<a href="/request-quote.html" class="hidden md:block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700">Get a Quote</a>
+</div></div></header>
+<section class="pt-36 pb-20 bg-white"><div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center"><div>
+<h1 class="text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">Managed IT Support <span class="text-blue-600">for Perth Businesses</span></h1>
+<p class="mt-6 text-lg text-slate-600 leading-relaxed">AY Technology provides reliable remote and on-site IT support for small and medium-sized businesses across Perth and Western Australia. We help with troubleshooting, Microsoft 365, business networks, cybersecurity, cloud services and ongoing managed IT support.</p>
+<div class="mt-8 flex flex-col sm:flex-row gap-4"><a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-center shadow-lg hover:bg-blue-700">Get IT Support</a><a href="#services" class="border border-slate-300 px-8 py-4 rounded-lg font-bold text-center">Our Services</a></div>
+<p class="mt-6 text-sm text-slate-500">✓ Perth-based business support &nbsp; ✓ Remote assistance available &nbsp; ✓ Flexible one-off and managed options</p>
+</div><div><img src="./IT support.jpg" alt="Managed IT support services for Perth businesses" class="rounded-2xl shadow-2xl w-full h-[450px] object-cover"></div></div></section>
+<section class="bg-slate-900 py-10"><div class="max-w-7xl mx-auto px-6 text-center"><p class="text-slate-400 uppercase tracking-widest text-sm font-bold mb-5">Helping Businesses Stay Connected</p><div class="flex flex-wrap justify-center gap-10 text-white text-lg font-semibold"><div><i class="fa-solid fa-headset text-blue-400 mr-2"></i>Fast Support</div><div><i class="fa-solid fa-network-wired text-blue-400 mr-2"></i>Reliable Networks</div><div><i class="fa-solid fa-shield-halved text-blue-400 mr-2"></i>Cyber Security</div><div><i class="fa-solid fa-cloud text-blue-400 mr-2"></i>Cloud Solutions</div></div></div></section>
+<section id="services" class="py-20 bg-white"><div class="max-w-7xl mx-auto px-6"><div class="text-center mb-12"><h2 class="text-3xl font-bold text-slate-900">Our IT Support Services</h2><p class="mt-4 text-slate-600 text-lg">Practical IT support for Perth businesses, available as one-off assistance or ongoing managed services.</p></div><div class="grid md:grid-cols-3 gap-8">
+<div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-laptop-medical text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Remote IT Support</h3><p class="text-slate-600">Quick assistance for software issues, system errors, troubleshooting and everyday technology problems.</p></div>
+<div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-server text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Network Support</h3><p class="text-slate-600">Business network setup, troubleshooting and maintenance to keep users, devices and cloud systems connected. <a href="/network-monitoring-services" class="text-blue-600 font-semibold hover:underline">Explore network monitoring</a>.</p></div>
+<div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-lock text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Cybersecurity Support</h3><p class="text-slate-600">Strengthen devices, accounts and business systems with practical security support. <a href="/cybersecurity-services" class="text-blue-600 font-semibold hover:underline">View cybersecurity services</a>.</p></div>
+<div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-cloud text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Cloud Support</h3><p class="text-slate-600">Support for cloud platforms, Microsoft 365, secure access and data protection. <a href="/cloud-backup-recovery" class="text-blue-600 font-semibold hover:underline">View cloud backup solutions</a>.</p></div>
+<div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-computer text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Computer Maintenance</h3><p class="text-slate-600">Keep your computers running efficiently with regular maintenance and optimisation.</p></div>
+<div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-business-time text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Business IT Solutions</h3><p class="text-slate-600">Technology solutions tailored around your business goals and workflow.</p></div>
+</div></div></section>
+<section class="py-20 bg-slate-50"><div class="max-w-7xl mx-auto px-6"><div class="text-center mb-12"><h2 class="text-3xl font-bold text-slate-900">Why Choose AY Technology for IT Support?</h2></div><div class="grid md:grid-cols-4 gap-8 text-center">
+<div><i class="fa-solid fa-clock text-blue-600 text-4xl mb-4"></i><h3 class="font-bold text-lg">Save Time</h3><p class="text-slate-600 mt-2">Focus on your business while we handle your technology.</p></div>
+<div><i class="fa-solid fa-user-shield text-blue-600 text-4xl mb-4"></i><h3 class="font-bold text-lg">Secure Support</h3><p class="text-slate-600 mt-2">Professional solutions focused on protecting your systems.</p></div>
+<div><i class="fa-solid fa-chart-line text-blue-600 text-4xl mb-4"></i><h3 class="font-bold text-lg">Improve Productivity</h3><p class="text-slate-600 mt-2">Reliable technology helps your team work better.</p></div>
+<div><i class="fa-solid fa-handshake text-blue-600 text-4xl mb-4"></i><h3 class="font-bold text-lg">Trusted Partner</h3><p class="text-slate-600 mt-2">Ongoing support for your business technology needs.</p></div>
+</div></div></section>
+<section id="process" class="py-20 bg-white"><div class="max-w-6xl mx-auto px-6"><div class="text-center mb-12"><h2 class="text-3xl font-bold text-slate-900">How It Works</h2></div><div class="grid md:grid-cols-3 gap-8">
+<div class="text-center"><div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">1</div><h3 class="font-bold text-xl mb-3">Contact Us</h3><p class="text-slate-600">Tell us about your IT challenges and business requirements.</p></div>
+<div class="text-center"><div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">2</div><h3 class="font-bold text-xl mb-3">Recommend the Right Solution</h3><p class="text-slate-600">We analyse your needs and recommend the right technology solution.</p></div>
+<div class="text-center"><div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">3</div><h3 class="font-bold text-xl mb-3">Stay Supported</h3><p class="text-slate-600">Receive ongoing support to keep your systems running smoothly.</p></div>
+</div></div></section>
+<section class="py-20 bg-blue-600 text-white"><div class="max-w-7xl mx-auto px-6"><div class="text-center mb-12"><h2 class="text-3xl font-bold">Common IT Problems We Help Solve</h2><p class="mt-4 text-lg text-blue-100 max-w-2xl mx-auto">Practical technical support designed to reduce disruptions and keep your business systems working reliably.</p></div><div class="grid md:grid-cols-2 gap-8">
+<div class="bg-blue-700 p-8 rounded-2xl"><i class="fa-solid fa-computer text-blue-300 text-3xl mb-4"></i><h3 class="text-xl font-bold mb-3">Slow or Unreliable Computers</h3><p class="text-blue-100 leading-relaxed">Troubleshoot performance problems, software errors and hardware issues affecting your team’s productivity.</p></div>
+<div class="bg-blue-700 p-8 rounded-2xl"><i class="fa-solid fa-wifi text-blue-300 text-3xl mb-4"></i><h3 class="text-xl font-bold mb-3">Network and Connectivity Issues</h3><p class="text-blue-100 leading-relaxed">Resolve unstable internet connections, Wi-Fi coverage problems and business network interruptions.</p></div>
+<div class="bg-blue-700 p-8 rounded-2xl"><i class="fa-solid fa-envelope text-blue-300 text-3xl mb-4"></i><h3 class="text-xl font-bold mb-3">Email and Account Problems</h3><p class="text-blue-100 leading-relaxed">Assist with email configuration, login problems, account access and common Microsoft 365 issues.</p></div>
+<div class="bg-blue-700 p-8 rounded-2xl"><i class="fa-solid fa-cloud-arrow-up text-blue-300 text-3xl mb-4"></i><h3 class="text-xl font-bold mb-3">Backup and Cloud Support</h3><p class="text-blue-100 leading-relaxed">Help configure cloud services, secure backups and file recovery processes for important business information.</p></div>
+</div></div></section>
+<section class="py-20 bg-white"><div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start"><div><p class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-3">Local and Remote Support</p><h2 class="text-3xl font-bold text-slate-900">IT Support Across Perth and Western Australia</h2><p class="mt-5 text-slate-600 leading-relaxed">We support businesses across Perth, including Fremantle, Joondalup, Osborne Park, Rockingham and Mandurah. Many software, account and system problems can be resolved remotely, while suitable infrastructure and hardware work can be arranged on site.</p></div><div class="bg-slate-50 border border-slate-200 rounded-2xl p-8"><h3 class="text-xl font-bold text-slate-900 mb-5">Related Business Technology Services</h3><ul class="space-y-4"><li><a href="/cybersecurity-services" class="text-blue-600 font-semibold hover:underline">Cybersecurity services for Perth businesses →</a></li><li><a href="/cloud-backup-recovery" class="text-blue-600 font-semibold hover:underline">Cloud backup and recovery solutions →</a></li><li><a href="/network-monitoring-services" class="text-blue-600 font-semibold hover:underline">Remote network monitoring →</a></li><li><a href="/cloud-telephony-services" class="text-blue-600 font-semibold hover:underline">Cloud telephony and VoIP →</a></li></ul></div></div></section>
+<section class="bg-blue-600 text-white py-12 text-center"><h2 class="text-3xl font-bold mb-3">Need Reliable IT Support?</h2><p class="mb-6 text-lg">Tell us your requirements and we will respond within 24 hours.</p><a href="#contact" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold">Request IT Support</a></section>
+<section id="faq" class="py-20 bg-slate-50"><div class="max-w-4xl mx-auto px-6"><h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions About IT Support</h2><div class="space-y-5">
+<details class="bg-white p-6 rounded-xl shadow-sm"><summary class="font-bold text-lg cursor-pointer">Do you provide remote IT support?</summary><p class="mt-4 text-slate-600">Yes. AY Technology provides secure remote troubleshooting and technical support for software, Microsoft 365, systems, networks and common business technology problems.</p></details>
+<details class="bg-white p-6 rounded-xl shadow-sm"><summary class="font-bold text-lg cursor-pointer">Do you provide on-site IT support in Perth?</summary><p class="mt-4 text-slate-600">On-site assistance is available for suitable jobs across Perth and surrounding areas. Availability depends on the issue, location and required equipment.</p></details>
+<details class="bg-white p-6 rounded-xl shadow-sm"><summary class="font-bold text-lg cursor-pointer">Can you support small businesses?</summary><p class="mt-4 text-slate-600">Yes. Our IT support is designed for small and medium-sized businesses that need practical, flexible assistance without maintaining a large internal IT team.</p></details>
+<details class="bg-white p-6 rounded-xl shadow-sm"><summary class="font-bold text-lg cursor-pointer">Do you offer managed IT support and one-off assistance?</summary><p class="mt-4 text-slate-600">Yes. You can request help with an individual issue or discuss ongoing managed support for users, devices, networks, security and cloud services.</p></details>
+<details class="bg-white p-6 rounded-xl shadow-sm"><summary class="font-bold text-lg cursor-pointer">What IT services do you provide?</summary><p class="mt-4 text-slate-600">Services include remote IT support, computer troubleshooting, network support, Microsoft 365 assistance, cybersecurity support, cloud backup, device maintenance and business technology advice.</p></details>
+</div></div></section>
+<section id="contact" class="py-20 bg-white"><div class="max-w-4xl mx-auto px-6"><div class="text-center mb-10"><h2 class="text-3xl font-bold text-slate-900">Ready to Improve Your IT?</h2><p class="text-slate-600 mt-4">Contact AY Technology to discuss your IT support requirements in Perth or anywhere in Australia through remote assistance.</p></div><div class="bg-white rounded-2xl shadow-xl border p-8"><form id="contact-form" class="space-y-5"><input type="hidden" name="service" value="IT Support"><input type="text" name="name" required placeholder="Your Name" class="w-full px-5 py-3 border rounded-lg"><input type="email" name="email" required placeholder="Your Email" class="w-full px-5 py-3 border rounded-lg"><input type="text" name="company" placeholder="Business Name" class="w-full px-5 py-3 border rounded-lg"><input type="tel" name="phone" placeholder="Phone Number" class="w-full px-5 py-3 border rounded-lg"><textarea name="message" rows="5" required placeholder="Tell us about your IT needs..." class="w-full px-5 py-3 border rounded-lg"></textarea><div class="cf-turnstile" data-sitekey="0x4AAAAAAD6Vo3rObkvgXX-0"></div><button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-lg font-bold hover:bg-blue-700">Send Enquiry</button></form></div></div></section>
+<section class="py-12 bg-slate-50"><div class="max-w-7xl mx-auto px-6 text-center"><h2 class="text-2xl font-bold text-slate-900 mb-6">Follow AY Technology</h2><p class="text-slate-600 mb-8">Stay updated with our latest technology solutions and business support services.</p><div class="flex justify-center gap-5"><a href="https://www.facebook.com/profile.php?id=61591770420755&sk=directory_basic_info" target="_blank" rel="noopener noreferrer" aria-label="AY Technology on Facebook" class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl hover:bg-blue-700 transition"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.linkedin.com/in/ay-technology-b42830421/" target="_blank" rel="noopener noreferrer" aria-label="AY Technology on LinkedIn" class="w-12 h-12 bg-sky-500 text-white rounded-full flex items-center justify-center text-xl hover:bg-sky-600 transition"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://www.instagram.com/aytech_support/" target="_blank" rel="noopener noreferrer" aria-label="AY Technology on Instagram" class="w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center text-xl hover:bg-pink-700 transition"><i class="fa-brands fa-instagram"></i></a></div></div></section>
+<footer class="bg-slate-950 text-slate-400 py-12 text-center"><p class="text-sm">© 2026 AY Technology. All rights reserved.</p><a href="/privacy-policy" class="text-xs hover:text-blue-400 mt-2 inline-block underline">Privacy Policy</a></footer>
 <script>
 document.getElementById("contact-form").addEventListener("submit", async function(event) {
-    event.preventDefault();
-
-    const form = event.target;
-    const button = form.querySelector('button[type="submit"]');
-
-    const originalText = button.textContent;
-    button.textContent = "Sending...";
-    button.disabled = true;
-
-    const formData = new FormData(form);
-
-    try {
-        const response = await fetch("https://contct-api.jumaoasking.workers.dev", {
-            method: "POST",
-            body: formData
-        });
-
-        if (response.ok) {
-            window.location.href = "https://aytechnology.net/thanks.html";
-        } else {
-            const error = await response.text();
-            alert("Error: " + error);
-
-            button.textContent = originalText;
-            button.disabled = false;
-        }
-
-    } catch (err) {
-        alert("Network error. Please try again.");
-
-        button.textContent = originalText;
-        button.disabled = false;
-    }
+  event.preventDefault();
+  const form = event.target;
+  const button = form.querySelector('button[type="submit"]');
+  const originalText = button.textContent;
+  button.textContent = "Sending...";
+  button.disabled = true;
+  const formData = new FormData(form);
+  try {
+    const response = await fetch("https://contct-api.jumaoasking.workers.dev", {method:"POST",body:formData});
+    if (response.ok) window.location.href = "https://aytechnology.net/thanks.html";
+    else { const error = await response.text(); alert("Error: " + error); button.textContent = originalText; button.disabled = false; }
+  } catch (err) { alert("Network error. Please try again."); button.textContent = originalText; button.disabled = false; }
 });
 </script>
-
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-
-
-
-
-
-
-
 </body>
-
 </html>
