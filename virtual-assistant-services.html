@@ -1,999 +1,313 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <link rel="canonical" href="https://aytechnology.net/virtual-assistant-services">
-
-<title>Virtual Assistant Services Australia | AYTechnology</title>
-
-<meta name="description" content="Professional virtual assistant services for Australian businesses. Get reliable remote support for administration, customer service, data entry, scheduling and daily business operations.">
-
+<meta name="theme-color" content="#2563eb">
+<title>Virtual Assistant Services Australia | AY Technology</title>
+<meta name="description" content="Virtual assistant services for Australian businesses. Delegate administration, customer support, data entry, research, scheduling and routine business tasks.">
 <meta name="robots" content="index, follow">
 
-<link rel="icon" href="./logo.png">
-
-<script src="https://cdn.tailwindcss.com"></script>
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
-rel="stylesheet">
-
-<meta property="og:title" content="Virtual Assistant Services Australia | AYTechnology">
-
-<meta property="og:description" content="Professional virtual assistant support for Australian businesses including administration, customer service, scheduling and daily operations.">
-
+<meta property="og:title" content="Virtual Assistant Services Australia | AY Technology">
+<meta property="og:description" content="Flexible remote administrative and operational support for small and medium-sized businesses across Australia.">
 <meta property="og:image" content="https://aytechnology.net/VA.jpg">
-
 <meta property="og:url" content="https://aytechnology.net/virtual-assistant-services">
-
 <meta property="og:type" content="website">
 
 <meta name="twitter:card" content="summary_large_image">
-
-<meta name="twitter:title" content="Virtual Assistant Services Australia | AYTechnology">
-
-<meta name="twitter:description" content="Reliable virtual assistants helping Australian businesses save time and improve productivity.">
-
+<meta name="twitter:title" content="Virtual Assistant Services Australia | AY Technology">
+<meta name="twitter:description" content="Delegate routine business tasks and create more time for customers, operations and growth.">
 <meta name="twitter:image" content="https://aytechnology.net/VA.jpg">
+<link rel="icon" href="./logo.png">
+
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@type": "Service",
- "name": "Virtual Assistant Services",
- "provider": {
-   "@type": "Organization",
-   "name": "AYTechnology",
-   "url": "https://aytechnology.net"
- },
- "areaServed": "Australia",
- "description": "Professional virtual assistant services for Australian businesses including administration, customer support, scheduling and business operations."
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aytechnology.net/#organization",
+      "name": "AY Technology",
+      "url": "https://aytechnology.net/",
+      "logo": "https://aytechnology.net/logo.png",
+      "email": "inquiry@aytechnology.net",
+      "telephone": "+61423384874"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://aytechnology.net/virtual-assistant-services#service",
+      "name": "Virtual Assistant Services Australia",
+      "serviceType": "Virtual Assistant and Remote Business Support",
+      "url": "https://aytechnology.net/virtual-assistant-services",
+      "image": "https://aytechnology.net/VA.jpg",
+      "description": "Remote virtual assistant services for Australian businesses, including administrative support, customer communication, data entry, online research, appointment management and routine operations support.",
+      "provider": {"@id": "https://aytechnology.net/#organization"},
+      "areaServed": [
+        {"@type": "Country", "name": "Australia"},
+        {"@type": "AdministrativeArea", "name": "Western Australia"},
+        {"@type": "City", "name": "Perth"}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://aytechnology.net/"},
+        {"@type": "ListItem", "position": 2, "name": "Virtual Assistant Services", "item": "https://aytechnology.net/virtual-assistant-services"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What tasks can a virtual assistant help with?",
+          "acceptedAnswer": {"@type": "Answer", "text": "A virtual assistant can support routine administrative and operational tasks such as email organisation, scheduling, data entry, research, document preparation, customer follow-ups and CRM updates. The exact task list is agreed according to your business needs."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use a virtual assistant part-time?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Virtual assistant support can be arranged around an agreed workload, schedule and scope. This can suit businesses that need ongoing part-time assistance or help with a defined group of tasks."}
+        },
+        {
+          "@type": "Question",
+          "name": "How do you choose a suitable virtual assistant?",
+          "acceptedAnswer": {"@type": "Answer", "text": "We first discuss your tasks, tools, required working hours and communication preferences. This information is then used to identify suitable support and define clear responsibilities before work begins."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can a virtual assistant support customers?",
+          "acceptedAnswer": {"@type": "Answer", "text": "A virtual assistant may assist with routine customer enquiries, follow-ups, appointment confirmations and administrative communication using approved scripts, procedures and escalation rules."}
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide virtual assistant services across Australia?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. AY Technology provides remote virtual assistant support for businesses across Australia, including Perth and Western Australia. Availability and working arrangements are discussed before the service begins."}
+        }
+      ]
+    }
+  ]
 }
 </script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <style>
-
-body {
-font-family:'Inter',sans-serif;
-background:#f8fafc;
-}
-
-h1,h2,h3 {
-letter-spacing:-0.03em;
-}
-
-section {
-scroll-margin-top:100px;
-}
-
+body {font-family:'Inter',sans-serif;background:#f8fafc;}
+h1,h2,h3 {letter-spacing:-0.03em;}
+section {scroll-margin-top:100px;}
 </style>
-
 </head>
 
-
 <body class="text-slate-800">
-
-
-<!-- HEADER -->
-
 <header class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
-
-<div class="max-w-7xl mx-auto px-6">
-
-<div class="h-20 flex justify-between items-center">
-
-
-<a href="/" class="flex items-center gap-3" aria-label="AY Technology homepage">
-
-<img src="./logo.png"
-class="h-10"
-alt="AYTechnology Logo">
-
-<span class="font-bold text-2xl text-slate-900">
-AYTech<span class="text-blue-600">nology</span>
-</span>
-
-</a>
-
-
-<nav class="hidden md:flex gap-8 font-medium text-sm">
-
-<a href="#services" class="hover:text-blue-600">
-Services
-</a>
-
-<a href="#process" class="hover:text-blue-600">
-How It Works
-</a>
-
-<a href="#contact" class="hover:text-blue-600">
-Contact
-</a>
-
-</nav>
-
-
-
-<a href="/request-quote.html"
-class="hidden md:block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700">
-
-Get Quote
-
-</a>
-
-</div>
-
-</div>
-
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="h-20 flex justify-between items-center">
+      <a href="/" class="flex items-center gap-3" aria-label="AY Technology homepage">
+        <img src="./logo.png" class="h-10" alt="AY Technology Logo">
+        <span class="font-bold text-2xl text-slate-900">AYTech<span class="text-blue-600">nology</span></span>
+      </a>
+      <nav class="hidden md:flex gap-8 font-medium text-sm">
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <a href="#services" class="hover:text-blue-600">Services</a>
+        <a href="#process" class="hover:text-blue-600">How It Works</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+      <a href="/request-quote.html" class="hidden md:block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700">Get a Quote</a>
+    </div>
+  </div>
 </header>
 
-
-
-
-
-<!-- HERO -->
-
+<main>
 <section class="pt-36 pb-20 bg-white">
-
-
-<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-
-
-<div>
-
-
-<h1 class="text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
-
-Grow Your Business With A
-
-<span class="text-blue-600">
-Reliable Virtual Assistant
-</span>
-
-</h1>
-
-
-
-<p class="mt-6 text-lg text-slate-600 leading-relaxed">
-
-AYTechnology provides professional virtual assistants
-to help Australian businesses manage administration,
-customer support, research, and daily operations.
-
-</p>
-
-
-
-<div class="mt-8 flex flex-col sm:flex-row gap-4">
-
-
-<a href="#contact"
-class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-center shadow-lg hover:bg-blue-700">
-
-Find Your Virtual Assistant
-
-</a>
-
-
-
-<a href="#services"
-class="border border-slate-300 px-8 py-4 rounded-lg font-bold text-center">
-
-View Services
-
-</a>
-
-
-</div>
-
-
-<p class="mt-6 text-sm text-slate-500">
-
-✓ Flexible support  
-✓ Business-focused assistance  
-✓ Reliable remote professionals
-
-</p>
-
-
-</div>
-
-
-
-
-<div>
-
-<img src="./VA.jpg"
-alt="Virtual Assistant Services"
-class="rounded-2xl shadow-2xl w-full h-[450px] object-cover">
-
-</div>
-
-
-</div>
-
-
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Remote Business Support Australia</p>
+      <h1 class="text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">Virtual Assistant Services <span class="text-blue-600">for Australian Businesses</span></h1>
+      <p class="mt-6 text-lg text-slate-600 leading-relaxed">AY Technology provides flexible virtual assistant support to help small and medium-sized businesses manage administration, customer communication, scheduling, research and routine operations. Delegate time-consuming tasks while keeping responsibilities, processes and expectations clear.</p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-4">
+        <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-center shadow-lg hover:bg-blue-700">Find Your Virtual Assistant</a>
+        <a href="#services" class="border border-slate-300 px-8 py-4 rounded-lg font-bold text-center">View VA Services</a>
+      </div>
+      <p class="mt-6 text-sm text-slate-500">Flexible support &nbsp; | &nbsp; Business-focused assistance &nbsp; | &nbsp; Remote service across Australia</p>
+    </div>
+    <div>
+      <img src="./VA.jpg" alt="Virtual assistant services for Australian businesses" class="rounded-2xl shadow-2xl w-full h-[450px] object-cover">
+    </div>
+  </div>
 </section>
-
-
-
-
-
-<!-- TRUST -->
 
 <section class="bg-slate-900 py-10">
-
-<div class="max-w-7xl mx-auto px-6 text-center">
-
-
-<p class="text-slate-400 uppercase tracking-widest text-sm font-bold mb-5">
-Helping Businesses Work Smarter
-</p>
-
-
-<div class="flex flex-wrap justify-center gap-10 text-white text-lg font-semibold">
-
-
-<div>
-<i class="fa-solid fa-clock text-blue-400 mr-2"></i>
-Save Time
-</div>
-
-
-<div>
-<i class="fa-solid fa-chart-line text-blue-400 mr-2"></i>
-Improve Productivity
-</div>
-
-
-<div>
-<i class="fa-solid fa-users text-blue-400 mr-2"></i>
-Expand Your Team
-</div>
-
-
-<div>
-<i class="fa-solid fa-shield text-blue-400 mr-2"></i>
-Reliable Support
-</div>
-
-
-</div>
-
-</div>
-
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <p class="text-slate-400 uppercase tracking-widest text-sm font-bold mb-5">Helping Businesses Work Smarter</p>
+    <div class="flex flex-wrap justify-center gap-10 text-white text-lg font-semibold">
+      <div><i class="fa-solid fa-clock text-blue-400 mr-2"></i>Save Time</div>
+      <div><i class="fa-solid fa-list-check text-blue-400 mr-2"></i>Stay Organised</div>
+      <div><i class="fa-solid fa-users text-blue-400 mr-2"></i>Expand Capacity</div>
+      <div><i class="fa-solid fa-headset text-blue-400 mr-2"></i>Reliable Support</div>
+    </div>
+  </div>
 </section>
 
-<!-- SERVICES -->
-
-<section id="services" class="py-20 bg-slate-50">
-
-<div class="max-w-7xl mx-auto px-6">
-
-
-<div class="text-center mb-14">
-
-<h2 class="text-4xl font-bold text-slate-900">
-Virtual Assistant Services
-</h2>
-
-<p class="mt-4 text-lg text-slate-600">
-Professional support designed around your business needs.
-</p>
-
-</div>
-
-
-
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-
-<div class="bg-white p-8 rounded-2xl shadow-md">
-
-<i class="fa-solid fa-envelope text-blue-600 text-3xl mb-5"></i>
-
-<h3 class="text-xl font-bold mb-3">
-Administrative Support
-</h3>
-
-<p class="text-slate-600">
-Email management, scheduling, document preparation,
-data organisation and daily administrative tasks.
-</p>
-
-</div>
-
-
-
-<div class="bg-white p-8 rounded-2xl shadow-md">
-
-<i class="fa-solid fa-headset text-blue-600 text-3xl mb-5"></i>
-
-<h3 class="text-xl font-bold mb-3">
-Customer Support
-</h3>
-
-<p class="text-slate-600">
-Customer enquiries, follow-ups, communication
-and professional client assistance.
-</p>
-
-</div>
-
-
-
-<div class="bg-white p-8 rounded-2xl shadow-md">
-
-<i class="fa-solid fa-database text-blue-600 text-3xl mb-5"></i>
-
-<h3 class="text-xl font-bold mb-3">
-Data Entry & Research
-</h3>
-
-<p class="text-slate-600">
-Data organisation, online research, records
-management and reporting support.
-</p>
-
-</div>
-
-
-
-<div class="bg-white p-8 rounded-2xl shadow-md">
-
-<i class="fa-solid fa-calendar-check text-blue-600 text-3xl mb-5"></i>
-
-<h3 class="text-xl font-bold mb-3">
-Appointment Management
-</h3>
-
-<p class="text-slate-600">
-Calendar management, bookings, reminders
-and scheduling assistance.
-</p>
-
-</div>
-
-
-
-<div class="bg-white p-8 rounded-2xl shadow-md">
-
-<i class="fa-solid fa-laptop text-blue-600 text-3xl mb-5"></i>
-
-<h3 class="text-xl font-bold mb-3">
-Online Business Support
-</h3>
-
-<p class="text-slate-600">
-Website updates, CRM support, online platforms
-and business systems assistance.
-</p>
-
-</div>
-
-
-
-<div class="bg-white p-8 rounded-2xl shadow-md">
-
-<i class="fa-solid fa-share-nodes text-blue-600 text-3xl mb-5"></i>
-
-<h3 class="text-xl font-bold mb-3">
-Social Media Assistance
-</h3>
-
-<p class="text-slate-600">
-Content scheduling, engagement support
-and basic digital marketing assistance.
-</p>
-
-</div>
-
-
-</div>
-
-
-</div>
-
+<section id="services" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-slate-900">Virtual Assistant Services for Your Business</h2>
+      <p class="mt-4 text-slate-600 text-lg max-w-3xl mx-auto">Remote support designed around the recurring tasks, tools and processes that take time away from your core business activities.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-clipboard-list text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Administrative Support</h3><p class="text-slate-600">Email organisation, document preparation, file management, recurring tasks and general day-to-day administration.</p></div>
+      <div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-comments text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Customer Support Assistance</h3><p class="text-slate-600">Routine enquiries, approved responses, appointment confirmations, follow-ups and customer communication support.</p></div>
+      <div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-keyboard text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Data Entry and Records</h3><p class="text-slate-600">Update spreadsheets, organise records, maintain databases and complete accurate recurring data-entry tasks.</p></div>
+      <div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-calendar-check text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Calendar and Appointments</h3><p class="text-slate-600">Manage calendars, coordinate meetings, arrange bookings and send reminders based on your preferred process.</p></div>
+      <div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-magnifying-glass-chart text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Online Research</h3><p class="text-slate-600">Gather information, compare options, organise findings and prepare basic research summaries for business decisions.</p></div>
+      <div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-laptop-file text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Online Business Support</h3><p class="text-slate-600">Assist with CRM updates, website content changes, task coordination and supported online business platforms.</p></div>
+    </div>
+  </div>
 </section>
 
-
-
-
-
-<!-- BENEFITS -->
-
-<section class="py-20 bg-white">
-
-
-<div class="max-w-6xl mx-auto px-6">
-
-
-<div class="grid lg:grid-cols-2 gap-12 items-center">
-
-
-<div>
-
-<h2 class="text-4xl font-bold text-slate-900">
-Why Businesses Choose AYTechnology
-</h2>
-
-
-<p class="mt-5 text-lg text-slate-600">
-
-Our virtual assistant service helps business owners
-delegate daily tasks while maintaining professional
-standards and reliable support.
-
-</p>
-
-
-</div>
-
-
-
-<div class="space-y-6">
-
-
-<div class="flex gap-4">
-
-<div class="bg-blue-100 text-blue-600 rounded-full w-12 h-12 flex items-center justify-center">
-
-<i class="fa-solid fa-check"></i>
-
-</div>
-
-
-<div>
-
-<h3 class="font-bold text-lg">
-Flexible Support
-</h3>
-
-<p class="text-slate-600">
-Choose assistance based on your business requirements.
-</p>
-
-</div>
-
-</div>
-
-
-
-
-<div class="flex gap-4">
-
-<div class="bg-blue-100 text-blue-600 rounded-full w-12 h-12 flex items-center justify-center">
-
-<i class="fa-solid fa-check"></i>
-
-</div>
-
-
-<div>
-
-<h3 class="font-bold text-lg">
-Save Valuable Time
-</h3>
-
-<p class="text-slate-600">
-Focus on growing your business while routine tasks are handled.
-</p>
-
-</div>
-
-</div>
-
-
-
-
-<div class="flex gap-4">
-
-<div class="bg-blue-100 text-blue-600 rounded-full w-12 h-12 flex items-center justify-center">
-
-<i class="fa-solid fa-check"></i>
-
-</div>
-
-
-<div>
-
-<h3 class="font-bold text-lg">
-Scale Your Operations
-</h3>
-
-<p class="text-slate-600">
-Increase your capacity without adding unnecessary overhead.
-</p>
-
-</div>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
+<section class="py-20 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12"><h2 class="text-3xl font-bold text-slate-900">Why Use a Virtual Assistant?</h2></div>
+    <div class="grid md:grid-cols-4 gap-8 text-center">
+      <div><i class="fa-solid fa-hourglass-half text-blue-600 text-4xl mb-4"></i><h3 class="font-bold text-lg">Reclaim Your Time</h3><p class="text-slate-600 mt-2">Delegate routine tasks so you can focus on customers, delivery and business decisions.</p></div>
+      <div><i class="fa-solid fa-layer-group text-blue-600 text-4xl mb-4"></i><h3 class="font-bold text-lg">Reduce Admin Backlogs</h3><p class="text-slate-600 mt-2">Keep recurring administrative work moving instead of allowing it to build up.</p></div>
+      <div><i class="fa-solid fa-arrow-up-right-dots text-blue-600 text-4xl mb-4"></i><h3 class="font-bold text-lg">Increase Capacity</h3><p class="text-slate-600 mt-2">Add support for defined tasks without immediately expanding an in-house team.</p></div>
+      <div><i class="fa-solid fa-diagram-project text-blue-600 text-4xl mb-4"></i><h3 class="font-bold text-lg">Improve Consistency</h3><p class="text-slate-600 mt-2">Use documented processes, task lists and clear communication to support reliable delivery.</p></div>
+    </div>
+  </div>
 </section>
 
-
-
-
-
-<!-- HOW IT WORKS -->
-
-<section id="process" class="py-20 bg-slate-50">
-
-
-<div class="max-w-7xl mx-auto px-6">
-
-
-<div class="text-center mb-14">
-
-
-<h2 class="text-4xl font-bold text-slate-900">
-How It Works
-</h2>
-
-
-<p class="mt-4 text-lg text-slate-600">
-A simple process to get the right support for your business.
-</p>
-
-
-</div>
-
-
-
-
-<div class="grid md:grid-cols-3 gap-8">
-
-
-<div class="bg-white p-8 rounded-2xl shadow-md text-center">
-
-<div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">
-1
-</div>
-
-<h3 class="text-xl font-bold mb-3">
-Understand Your Needs
-</h3>
-
-<p class="text-slate-600">
-We discuss your business goals and the type of assistance you require.
-</p>
-
-</div>
-
-
-
-
-<div class="bg-white p-8 rounded-2xl shadow-md text-center">
-
-<div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">
-2
-</div>
-
-<h3 class="text-xl font-bold mb-3">
-Match Your Assistant
-</h3>
-
-<p class="text-slate-600">
-We help connect you with suitable virtual assistant support.
-</p>
-
-</div>
-
-
-
-
-<div class="bg-white p-8 rounded-2xl shadow-md text-center">
-
-<div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">
-3
-</div>
-
-<h3 class="text-xl font-bold mb-3">
-Start Growing
-</h3>
-
-<p class="text-slate-600">
-Your assistant manages tasks while you focus on business growth.
-</p>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
+<section id="process" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-12"><h2 class="text-3xl font-bold text-slate-900">How Our Virtual Assistant Process Works</h2></div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center"><div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">1</div><h3 class="font-bold text-xl mb-3">Define Your Tasks</h3><p class="text-slate-600">We discuss your workload, tools, priorities, preferred hours and expected outcomes.</p></div>
+      <div class="text-center"><div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">2</div><h3 class="font-bold text-xl mb-3">Arrange Suitable Support</h3><p class="text-slate-600">We identify an appropriate working arrangement and establish responsibilities and communication.</p></div>
+      <div class="text-center"><div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">3</div><h3 class="font-bold text-xl mb-3">Start and Refine</h3><p class="text-slate-600">Work begins using agreed processes, with priorities and task instructions refined as required.</p></div>
+    </div>
+  </div>
 </section>
-
-<!-- COMMON VIRTUAL ASSISTANT SUPPORT NEEDS -->
 
 <section class="py-20 bg-blue-600 text-white">
-
-    <div class="max-w-7xl mx-auto px-6">
-
-        <div class="text-center mb-12">
-
-            <h2 class="text-3xl font-bold">
-                Common Tasks Our Virtual Assistants Can Support
-            </h2>
-
-            <p class="mt-4 text-lg text-blue-100 max-w-2xl mx-auto">
-                Flexible administrative and operational support designed to reduce workload and help your business stay organised.
-            </p>
-
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8">
-
-            <div class="bg-blue-700 p-8 rounded-2xl">
-
-                <i class="fa-solid fa-calendar-check text-blue-300 text-3xl mb-4"></i>
-
-                <h3 class="text-xl font-bold mb-3">
-                    Calendar and Appointment Management
-                </h3>
-
-                <p class="text-blue-100 leading-relaxed">
-                    Organise meetings, manage appointments, send reminders and help keep your daily schedule on track.
-                </p>
-
-            </div>
-
-            <div class="bg-blue-700 p-8 rounded-2xl">
-
-                <i class="fa-solid fa-envelope-open-text text-blue-300 text-3xl mb-4"></i>
-
-                <h3 class="text-xl font-bold mb-3">
-                    Email and Customer Enquiries
-                </h3>
-
-                <p class="text-blue-100 leading-relaxed">
-                    Sort inboxes, prepare responses, organise follow-ups and help manage routine customer communication.
-                </p>
-
-            </div>
-
-            <div class="bg-blue-700 p-8 rounded-2xl">
-
-                <i class="fa-solid fa-file-lines text-blue-300 text-3xl mb-4"></i>
-
-                <h3 class="text-xl font-bold mb-3">
-                    Data Entry and Administration
-                </h3>
-
-                <p class="text-blue-100 leading-relaxed">
-                    Update spreadsheets, maintain records, prepare documents and complete recurring administrative tasks.
-                </p>
-
-            </div>
-
-            <div class="bg-blue-700 p-8 rounded-2xl">
-
-                <i class="fa-solid fa-list-check text-blue-300 text-3xl mb-4"></i>
-
-                <h3 class="text-xl font-bold mb-3">
-                    Business Operations Support
-                </h3>
-
-                <p class="text-blue-100 leading-relaxed">
-                    Assist with task coordination, research, reporting and other processes based on your business requirements.
-                </p>
-
-            </div>
-
-        </div>
-
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold">Common Tasks a Virtual Assistant Can Support</h2>
+      <p class="mt-4 text-lg text-blue-100 max-w-3xl mx-auto">Practical support for the recurring work that keeps your business organised and responsive.</p>
     </div>
-
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-blue-700 p-8 rounded-2xl"><i class="fa-solid fa-envelope-open-text text-blue-300 text-3xl mb-4"></i><h3 class="text-xl font-bold mb-3">Email and Follow-ups</h3><p class="text-blue-100 leading-relaxed">Sort routine messages, prepare approved replies, organise follow-ups and escalate important enquiries.</p></div>
+      <div class="bg-blue-700 p-8 rounded-2xl"><i class="fa-solid fa-calendar-days text-blue-300 text-3xl mb-4"></i><h3 class="text-xl font-bold mb-3">Scheduling and Bookings</h3><p class="text-blue-100 leading-relaxed">Coordinate calendars, meetings, appointments, reminders and availability using your chosen tools.</p></div>
+      <div class="bg-blue-700 p-8 rounded-2xl"><i class="fa-solid fa-file-circle-check text-blue-300 text-3xl mb-4"></i><h3 class="text-xl font-bold mb-3">Documents and Data</h3><p class="text-blue-100 leading-relaxed">Prepare documents, update spreadsheets, maintain records and organise information for easier access.</p></div>
+      <div class="bg-blue-700 p-8 rounded-2xl"><i class="fa-solid fa-gears text-blue-300 text-3xl mb-4"></i><h3 class="text-xl font-bold mb-3">Routine Operations</h3><p class="text-blue-100 leading-relaxed">Support checklists, CRM updates, research, reporting and repeatable administrative workflows.</p></div>
+    </div>
+  </div>
 </section>
 
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start">
+    <div>
+      <p class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-3">Remote Support Across Australia</p>
+      <h2 class="text-3xl font-bold text-slate-900">Virtual Assistant Support for Perth and Australian Businesses</h2>
+      <p class="mt-5 text-slate-600 leading-relaxed">AY Technology supports businesses in Perth, Western Australia and other Australian locations through remote working arrangements. Tasks, availability, access requirements and communication methods are agreed before work begins so the service is aligned with your business operations.</p>
+    </div>
+    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8">
+      <h3 class="text-xl font-bold text-slate-900 mb-5">Related Business Services</h3>
+      <ul class="space-y-4">
+        <li><a href="/ai-automation-services" class="text-blue-600 font-semibold hover:underline">AI automation and workflow support &rarr;</a></li>
+        <li><a href="/it-support-services" class="text-blue-600 font-semibold hover:underline">Managed IT support for business systems &rarr;</a></li>
+        <li><a href="/website-maintenance-services" class="text-blue-600 font-semibold hover:underline">Website hosting and website care &rarr;</a></li>
+        <li><a href="/cloud-telephony-services" class="text-blue-600 font-semibold hover:underline">Cloud telephony and VoIP solutions &rarr;</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
 
+<section class="bg-blue-600 text-white py-12 text-center">
+  <h2 class="text-3xl font-bold mb-3">Ready to Delegate Routine Business Tasks?</h2>
+  <p class="mb-6 text-lg">Tell us which tasks are taking your time and what kind of support your business needs.</p>
+  <a href="#contact" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold">Discuss Your VA Requirements</a>
+</section>
 
-
-<!-- CONTACT FORM -->
+<section id="faq" class="py-20 bg-slate-50">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions About Virtual Assistants</h2>
+    <div class="space-y-5">
+      <details class="bg-white p-6 rounded-xl shadow-sm"><summary class="font-bold text-lg cursor-pointer">What tasks can a virtual assistant help with?</summary><p class="mt-4 text-slate-600">A virtual assistant can support routine administrative and operational tasks such as email organisation, scheduling, data entry, research, document preparation, customer follow-ups and CRM updates. The exact task list is agreed according to your business needs.</p></details>
+      <details class="bg-white p-6 rounded-xl shadow-sm"><summary class="font-bold text-lg cursor-pointer">Can I use a virtual assistant part-time?</summary><p class="mt-4 text-slate-600">Yes. Virtual assistant support can be arranged around an agreed workload, schedule and scope. This can suit businesses that need ongoing part-time assistance or help with a defined group of tasks.</p></details>
+      <details class="bg-white p-6 rounded-xl shadow-sm"><summary class="font-bold text-lg cursor-pointer">How do you choose a suitable virtual assistant?</summary><p class="mt-4 text-slate-600">We first discuss your tasks, tools, required working hours and communication preferences. This information is then used to identify suitable support and define clear responsibilities before work begins.</p></details>
+      <details class="bg-white p-6 rounded-xl shadow-sm"><summary class="font-bold text-lg cursor-pointer">Can a virtual assistant support customers?</summary><p class="mt-4 text-slate-600">A virtual assistant may assist with routine customer enquiries, follow-ups, appointment confirmations and administrative communication using approved scripts, procedures and escalation rules.</p></details>
+      <details class="bg-white p-6 rounded-xl shadow-sm"><summary class="font-bold text-lg cursor-pointer">Do you provide virtual assistant services across Australia?</summary><p class="mt-4 text-slate-600">Yes. AY Technology provides remote virtual assistant support for businesses across Australia, including Perth and Western Australia. Availability and working arrangements are discussed before the service begins.</p></details>
+    </div>
+  </div>
+</section>
 
 <section id="contact" class="py-20 bg-white">
-
-
-<div class="max-w-3xl mx-auto px-6">
-
-
-<div class="text-center mb-12">
-
-
-<h2 class="text-4xl font-bold text-slate-900">
-
-Get Started With Your Virtual Assistant
-
-</h2>
-
-
-<p class="mt-4 text-lg text-slate-600">
-
-Tell us about your business needs and we will help
-you find the right support.
-
-</p>
-
-
-</div>
-
-
-<form id="contact-form" class="space-y-5">
-
-
-<div>
-
-<label class="block mb-2 font-semibold">
-Name
-</label>
-
-
-<input
-
-type="text"
-
-name="name"
-
-required
-
-placeholder="Your name"
-
-class="w-full px-5 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600">
-
-</div>
-
-
-
-
-
-<div>
-
-<label class="block mb-2 font-semibold">
-Email
-</label>
-
-
-<input
-
-type="email"
-
-name="email"
-
-required
-
-placeholder="Your email address"
-
-class="w-full px-5 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600">
-
-</div>
-
-
-
-
-
-<div>
-
-<label class="block mb-2 font-semibold">
-Business Name
-</label>
-
-
-<input
-
-type="text"
-
-name="company"
-
-placeholder="Your company name"
-
-class="w-full px-5 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600">
-
-</div>
-
-
-
-
-
-<div>
-
-<label class="block mb-2 font-semibold">
-Phone Number
-</label>
-
-
-<input
-
-type="tel"
-
-name="phone"
-
-placeholder="Your phone number"
-
-class="w-full px-5 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600">
-
-</div>
-
-
-
-
-
-<div>
-
-<label class="block mb-2 font-semibold">
-How can we help?
-</label>
-
-
-<textarea
-
-name="message"
-
-rows="5"
-
-required
-
-placeholder="Tell us what support you need..."
-
-class="w-full px-5 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-600"></textarea>
-
-
-</div>
-
-
-
-<div class="cf-turnstile"
-                     data-sitekey="0x4AAAAAAD6Vo3rObkvgXX-0">
-                    </div>
-
-<button
-
-type="submit"
-
-class="w-full bg-blue-600 text-white py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition">
-
-Send Enquiry
-
-</button>
-
-
-
-</form>
-
-
-
-</div>
-
-
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-bold text-slate-900">Find Virtual Assistant Support for Your Business</h2>
+      <p class="text-slate-600 mt-4">Contact AY Technology and tell us about the tasks, hours, tools and support your business requires.</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow-xl border p-8">
+      <form id="contact-form" class="space-y-5">
+        <input type="hidden" name="service" value="Virtual Assistant Services">
+        <input type="text" name="name" required placeholder="Your Name" class="w-full px-5 py-3 border rounded-lg">
+        <input type="email" name="email" required placeholder="Your Email" class="w-full px-5 py-3 border rounded-lg">
+        <input type="text" name="company" placeholder="Business Name" class="w-full px-5 py-3 border rounded-lg">
+        <input type="tel" name="phone" placeholder="Phone Number" class="w-full px-5 py-3 border rounded-lg">
+        <textarea name="message" rows="5" required placeholder="Tell us which tasks you need help with, your preferred hours and the tools you use..." class="w-full px-5 py-3 border rounded-lg"></textarea>
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAAD6Vo3rObkvgXX-0"></div>
+        <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-lg font-bold hover:bg-blue-700">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
 </section>
-
-<!-- SOCIAL MEDIA SECTION -->
 
 <section class="py-12 bg-slate-50">
-
-<div class="max-w-7xl mx-auto px-6 text-center">
-
-<h2 class="text-2xl font-bold text-slate-900 mb-6">
-Follow AYTechnology
-</h2>
-
-<p class="text-slate-600 mb-8">
-Stay updated with our latest technology solutions and business support services.
-</p>
-
-
-<div class="flex justify-center gap-5">
-
-
-<a href="https://www.facebook.com/profile.php?id=61591770420755&sk=directory_basic_info" 
-class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl hover:bg-blue-700 transition">
-<i class="fa-brands fa-facebook-f"></i>
-</a>
-
-
-
-<a href="https://www.linkedin.com/in/ay-technology-b42830421/" 
-class="w-12 h-12 bg-sky-500 text-white rounded-full flex items-center justify-center text-xl hover:bg-sky-600 transition">
-<i class="fa-brands fa-linkedin-in"></i>
-</a>
-
-
-
-
-
-<a href="https://www.instagram.com/aytech_support/" 
-class="w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center text-xl hover:bg-pink-700 transition">
-<i class="fa-brands fa-instagram"></i>
-</a>
-
-
-</div>
-
-
-</div>
-
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-2xl font-bold text-slate-900 mb-6">Follow AY Technology</h2>
+    <p class="text-slate-600 mb-8">Stay updated with our latest technology solutions and business support services.</p>
+    <div class="flex justify-center gap-5">
+      <a href="https://www.facebook.com/profile.php?id=61591770420755&sk=directory_basic_info" target="_blank" rel="noopener noreferrer" aria-label="AY Technology on Facebook" class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl hover:bg-blue-700 transition"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.linkedin.com/in/ay-technology-b42830421/" target="_blank" rel="noopener noreferrer" aria-label="AY Technology on LinkedIn" class="w-12 h-12 bg-sky-500 text-white rounded-full flex items-center justify-center text-xl hover:bg-sky-600 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/aytech_support/" target="_blank" rel="noopener noreferrer" aria-label="AY Technology on Instagram" class="w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center text-xl hover:bg-pink-700 transition"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
 </section>
-
-
-
-<!-- FOOTER -->
+</main>
 
 <footer class="bg-slate-950 text-slate-400 py-12 text-center">
-
-    <p class="text-sm">
-        © 2026 AY Technology. All rights reserved.
-    </p>
-
-    <a href="/privacy-policy"
-       class="text-xs hover:text-blue-400 mt-2 inline-block underline">
-        Privacy Policy
-    </a>
-
+  <p class="text-sm">&copy; 2026 AY Technology. All rights reserved.</p>
+  <a href="/privacy-policy" class="text-xs hover:text-blue-400 mt-2 inline-block underline">Privacy Policy</a>
 </footer>
-
-
-<!--CLOUDWORKER REDIRECT -->
-
 
 <script>
 document.getElementById("contact-form").addEventListener("submit", async function(event) {
     event.preventDefault();
-
     const form = event.target;
     const button = form.querySelector('button[type="submit"]');
-
     const originalText = button.textContent;
     button.textContent = "Sending...";
     button.disabled = true;
-
     const formData = new FormData(form);
-
     try {
-        const response = await fetch("https://contct-api.jumaoasking.workers.dev", {
-            method: "POST",
-            body: formData
-        });
-
+        const response = await fetch("https://contct-api.jumaoasking.workers.dev", {method: "POST", body: formData});
         if (response.ok) {
             window.location.href = "https://aytechnology.net/thanks.html";
         } else {
             const error = await response.text();
             alert("Error: " + error);
-
             button.textContent = originalText;
             button.disabled = false;
         }
-
     } catch (err) {
         alert("Network error. Please try again.");
-
         button.textContent = originalText;
         button.disabled = false;
     }
 });
 </script>
-
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-
-
-
-
 </body>
-
 </html>

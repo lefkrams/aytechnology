@@ -1,1366 +1,313 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
 <link rel="canonical" href="https://aytechnology.net/cybersecurity-services">
-
-
-<title>Cybersecurity Services Australia | AYTechnology</title>
-
-
-<meta name="description" content="Protect your business with professional cybersecurity services from AYTechnology. Security solutions, threat protection, monitoring and risk management for Australian businesses.">
-
-
+<meta name="theme-color" content="#2563eb">
+<title>Cybersecurity Services Perth | Business Security | AY Technology</title>
+<meta name="description" content="Cybersecurity services for Perth businesses. Improve email, account, device, network, cloud and data security with practical protection and ongoing support.">
 <meta name="robots" content="index, follow">
 
-
-
-<!-- OPEN GRAPH -->
-
-<meta property="og:title" content="Cybersecurity Services Australia | AYTechnology">
-
-<meta property="og:description" content="Professional cybersecurity solutions to protect Australian businesses from online threats and security risks.">
-
+<meta property="og:title" content="Cybersecurity Services Perth | AY Technology">
+<meta property="og:description" content="Practical cybersecurity services for small and medium-sized businesses across Perth and Western Australia.">
 <meta property="og:image" content="https://aytechnology.net/cybersecurity.jpg">
-
 <meta property="og:url" content="https://aytechnology.net/cybersecurity-services">
-
 <meta property="og:type" content="website">
 
-
-
-
-
-<!-- X CARD -->
-
 <meta name="twitter:card" content="summary_large_image">
-
-<meta name="twitter:title" content="Cybersecurity Services Australia | AYTechnology">
-
-<meta name="twitter:description" content="Protect your business with reliable cybersecurity solutions.">
-
+<meta name="twitter:title" content="Cybersecurity Services Perth | AY Technology">
+<meta name="twitter:description" content="Protect business accounts, devices, networks, cloud systems and important data with practical cybersecurity support.">
 <meta name="twitter:image" content="https://aytechnology.net/cybersecurity.jpg">
-
-
-
-
-
 <link rel="icon" href="./logo.png">
 
-
-
-<!-- CYBERSECURITY SCHEMA -->
-
 <script type="application/ld+json">
-
 {
- "@context":"https://schema.org",
- "@type":"Service",
- "name":"Cybersecurity Services",
- "provider":{
-   "@type":"Organization",
-   "name":"AYTechnology",
-   "url":"https://aytechnology.net"
- },
- "areaServed":"Australia",
- "description":"Cybersecurity protection, security monitoring, risk management and technology security solutions for businesses."
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://aytechnology.net/#organization",
+      "name": "AY Technology",
+      "url": "https://aytechnology.net/",
+      "logo": "https://aytechnology.net/logo.png",
+      "email": "inquiry@aytechnology.net",
+      "telephone": "+61423384874"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://aytechnology.net/cybersecurity-services#service",
+      "name": "Cybersecurity Services in Perth",
+      "serviceType": "Business Cybersecurity Services",
+      "url": "https://aytechnology.net/cybersecurity-services",
+      "image": "https://aytechnology.net/cybersecurity.jpg",
+      "description": "Cybersecurity services for Perth businesses, including security assessments, email security, account protection, endpoint protection, network security, cloud security and data protection guidance.",
+      "provider": {"@id": "https://aytechnology.net/#organization"},
+      "areaServed": [
+        {"@type": "City", "name": "Perth"},
+        {"@type": "AdministrativeArea", "name": "Western Australia"},
+        {"@type": "Country", "name": "Australia"}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://aytechnology.net/"},
+        {"@type": "ListItem", "position": 2, "name": "Cybersecurity Services", "item": "https://aytechnology.net/cybersecurity-services"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why does a small business need cybersecurity?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Small businesses rely on email, online accounts, cloud platforms and connected devices. Cybersecurity helps reduce the risk of unauthorised access, phishing, malware, data loss and business disruption."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can you review our current cybersecurity setup?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. AY Technology can review suitable parts of your current setup and recommend practical improvements for accounts, devices, email, networks, cloud services and data protection."}
+        },
+        {
+          "@type": "Question",
+          "name": "Do you help with phishing and email security?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. We can help improve email security settings, strengthen account access and provide practical guidance for recognising suspicious links, attachments and impersonation attempts."}
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide cybersecurity services in Perth?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. AY Technology supports businesses across Perth and Western Australia. Many security reviews and configuration tasks can be completed remotely, with on-site assistance available for suitable work."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can cybersecurity remove every business risk?",
+          "acceptedAnswer": {"@type": "Answer", "text": "No security measure can remove every risk. A layered approach using secure account settings, protected devices, backups, staff awareness and ongoing maintenance can significantly improve a business's security posture."}
+        }
+      ]
+    }
+  ]
 }
-
 </script>
 
-
-
 <script src="https://cdn.tailwindcss.com"></script>
-
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
-rel="stylesheet">
-
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <style>
-
-body {
-font-family:'Inter',sans-serif;
-background:#f8fafc;
-}
-
-
-h1,h2,h3 {
-letter-spacing:-0.03em;
-}
-
-
-section {
-scroll-margin-top:100px;
-}
-
+body {font-family:'Inter',sans-serif;background:#f8fafc;}
+h1,h2,h3 {letter-spacing:-0.03em;}
+section {scroll-margin-top:100px;}
 </style>
-
-
 </head>
 
-
-
-
 <body class="text-slate-800">
-
-
-
-
-
-
-<!-- HEADER -->
-
 <header class="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
-
-
-<div class="max-w-7xl mx-auto px-6">
-
-
-<div class="h-20 flex justify-between items-center">
-
-
-<a href="/" class="flex items-center gap-3" aria-label="AY Technology homepage">
-
-
-<img src="./logo.png"
-class="h-10"
-alt="AYTechnology Logo">
-
-
-<span class="font-bold text-2xl text-slate-900">
-
-AYTech<span class="text-blue-600">nology</span>
-
-</span>
-
-
-</a>
-
-
-
-
-
-<nav class="hidden md:flex gap-8 font-medium text-sm">
-
-
-<a href="#services" class="hover:text-blue-600">
-Services
-</a>
-
-
-<a href="#process" class="hover:text-blue-600">
-How It Works
-</a>
-
-
-<a href="#contact" class="hover:text-blue-600">
-Contact
-</a>
-
-
-</nav>
-
-
-
-
-<a href="/request-quote.html"
-class="hidden md:block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700">
-
-Get Quote
-
-</a>
-
-
-
-</div>
-
-</div>
-
-
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="h-20 flex justify-between items-center">
+      <a href="/" class="flex items-center gap-3" aria-label="AY Technology homepage">
+        <img src="./logo.png" class="h-10" alt="AY Technology Logo">
+        <span class="font-bold text-2xl text-slate-900">AYTech<span class="text-blue-600">nology</span></span>
+      </a>
+      <nav class="hidden md:flex gap-8 font-medium text-sm">
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <a href="#services" class="hover:text-blue-600">Services</a>
+        <a href="#process" class="hover:text-blue-600">How It Works</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+      </nav>
+      <a href="/request-quote.html" class="hidden md:block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700">Get a Quote</a>
+    </div>
+  </div>
 </header>
 
-
-
-
-
-
-
-
-
-<!-- HERO -->
-
+<main>
 <section class="pt-36 pb-20 bg-white">
-
-
-<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
-
-
-
-<div>
-
-
-
-<h1 class="text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">
-
-
-Protect Your Business With
-
-<span class="text-blue-600">
-Cybersecurity Solutions
-</span>
-
-
-</h1>
-
-
-
-
-
-<p class="mt-6 text-lg text-slate-600 leading-relaxed">
-
-
-AYTechnology helps Australian businesses improve their digital security with cybersecurity solutions designed to protect systems, data and online operations.
-
-
-</p>
-
-
-
-
-
-<div class="mt-8 flex flex-col sm:flex-row gap-4">
-
-
-<a href="#contact"
-class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-center shadow-lg hover:bg-blue-700">
-
-Get Security Assessment
-
-</a>
-
-
-
-
-<a href="#services"
-class="border border-slate-300 px-8 py-4 rounded-lg font-bold text-center">
-
-Our Services
-
-</a>
-
-
-</div>
-
-
-
-
-
-<p class="mt-6 text-sm text-slate-500">
-
-✓ Threat protection
-
-✓ Business security
-
-✓ Data protection
-
-</p>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-<div>
-
-
-<img src="./cybersecurity.jpg"
-alt="Cybersecurity Services Australia"
-class="rounded-2xl shadow-2xl w-full h-[450px] object-cover">
-
-
-</div>
-
-
-
-
-</div>
-
-
+  <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+    <div>
+      <p class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">Business Cybersecurity Perth</p>
+      <h1 class="text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight">Cybersecurity Services <span class="text-blue-600">for Perth Businesses</span></h1>
+      <p class="mt-6 text-lg text-slate-600 leading-relaxed">AY Technology helps small and medium-sized businesses improve the security of their accounts, email, devices, networks, cloud services and important data. Our practical cybersecurity support is designed around your technology, risks and day-to-day operations.</p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-4">
+        <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-center shadow-lg hover:bg-blue-700">Request a Security Assessment</a>
+        <a href="#services" class="border border-slate-300 px-8 py-4 rounded-lg font-bold text-center">View Cybersecurity Services</a>
+      </div>
+      <p class="mt-6 text-sm text-slate-500">✓ Support for Perth businesses &nbsp; ✓ Remote assistance available &nbsp; ✓ Practical security improvements</p>
+    </div>
+    <div>
+      <img src="./cybersecurity.jpg" alt="Cybersecurity services for Perth businesses" class="rounded-2xl shadow-2xl w-full h-[450px] object-cover">
+    </div>
+  </div>
 </section>
-
-
-</div>
-
-
-</section>
-<!-- TRUST BANNER -->
 
 <section class="bg-slate-900 py-10">
-
-<div class="max-w-7xl mx-auto px-6 text-center">
-
-
-<p class="text-slate-400 uppercase tracking-widest text-sm font-bold mb-5">
-Protecting Businesses From Digital Threats
-</p>
-
-
-
-<div class="flex flex-wrap justify-center gap-10 text-white text-lg font-semibold">
-
-
-
-<div>
-<i class="fa-solid fa-shield-halved text-blue-400 mr-2"></i>
-Threat Protection
-</div>
-
-
-
-<div>
-<i class="fa-solid fa-lock text-blue-400 mr-2"></i>
-Data Security
-</div>
-
-
-
-<div>
-<i class="fa-solid fa-network-wired text-blue-400 mr-2"></i>
-Network Protection
-</div>
-
-
-
-<div>
-<i class="fa-solid fa-user-shield text-blue-400 mr-2"></i>
-Business Safety
-</div>
-
-
-
-</div>
-
-</div>
-
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <p class="text-slate-400 uppercase tracking-widest text-sm font-bold mb-5">Protecting Essential Business Technology</p>
+    <div class="flex flex-wrap justify-center gap-10 text-white text-lg font-semibold">
+      <div><i class="fa-solid fa-envelope-circle-check text-blue-400 mr-2"></i>Email Security</div>
+      <div><i class="fa-solid fa-user-lock text-blue-400 mr-2"></i>Account Protection</div>
+      <div><i class="fa-solid fa-laptop-shield text-blue-400 mr-2"></i>Device Security</div>
+      <div><i class="fa-solid fa-database text-blue-400 mr-2"></i>Data Protection</div>
+    </div>
+  </div>
 </section>
-
-
-
-
-
-
-
-
-
-<!-- SERVICES -->
 
 <section id="services" class="py-20 bg-white">
-
-
-<div class="max-w-7xl mx-auto px-6">
-
-
-<div class="text-center mb-12">
-
-
-<h2 class="text-3xl font-bold text-slate-900">
-Our Cybersecurity Services
-</h2>
-
-
-<p class="mt-4 text-lg text-slate-600">
-Security solutions designed to protect your business systems and information.
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="grid md:grid-cols-3 gap-8">
-
-
-
-
-
-<div class="bg-slate-50 p-8 rounded-2xl shadow-sm">
-
-
-<i class="fa-solid fa-virus-slash text-blue-600 text-4xl mb-5"></i>
-
-
-<h3 class="text-xl font-bold mb-3">
-Threat Protection
-</h3>
-
-
-<p class="text-slate-600">
-Protection against malware, cyber threats and security vulnerabilities.
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="bg-slate-50 p-8 rounded-2xl shadow-sm">
-
-
-<i class="fa-solid fa-network-wired text-blue-600 text-4xl mb-5"></i>
-
-
-<h3 class="text-xl font-bold mb-3">
-Network Security
-</h3>
-
-
-<p class="text-slate-600">
-Help secure your business network and connected devices.
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="bg-slate-50 p-8 rounded-2xl shadow-sm">
-
-
-<i class="fa-solid fa-envelope-circle-check text-blue-600 text-4xl mb-5"></i>
-
-
-<h3 class="text-xl font-bold mb-3">
-Email Security
-</h3>
-
-
-<p class="text-slate-600">
-Reduce risks from phishing attacks and suspicious emails.
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="bg-slate-50 p-8 rounded-2xl shadow-sm">
-
-
-<i class="fa-solid fa-database text-blue-600 text-4xl mb-5"></i>
-
-
-<h3 class="text-xl font-bold mb-3">
-Data Protection
-</h3>
-
-
-<p class="text-slate-600">
-Protect important business information with better security practices.
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="bg-slate-50 p-8 rounded-2xl shadow-sm">
-
-
-<i class="fa-solid fa-magnifying-glass-chart text-blue-600 text-4xl mb-5"></i>
-
-
-<h3 class="text-xl font-bold mb-3">
-Security Assessment
-</h3>
-
-
-<p class="text-slate-600">
-Identify weaknesses and improve your overall security posture.
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="bg-slate-50 p-8 rounded-2xl shadow-sm">
-
-
-<i class="fa-solid fa-cloud-lock text-blue-600 text-4xl mb-5"></i>
-
-
-<h3 class="text-xl font-bold mb-3">
-Cloud Security
-</h3>
-
-
-<p class="text-slate-600">
-Support safer use of cloud platforms and online services.
-</p>
-
-
-</div>
-
-
-
-
-
-</div>
-
-
-</div>
-
-
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-slate-900">Our Cybersecurity Services</h2>
+      <p class="mt-4 text-slate-600 text-lg max-w-3xl mx-auto">Layered security support to help reduce common cyber risks affecting business systems, users and information.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-magnifying-glass-chart text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Security Assessment</h3><p class="text-slate-600">Review key parts of your technology setup to identify practical security gaps and improvement priorities.</p></div>
+      <div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-envelope-circle-check text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Email and Phishing Protection</h3><p class="text-slate-600">Improve email security and help reduce risks from suspicious links, attachments, impersonation and account compromise.</p></div>
+      <div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-key text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Account and Access Security</h3><p class="text-slate-600">Strengthen business accounts with multi-factor authentication, appropriate permissions and safer access practices.</p></div>
+      <div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-laptop-shield text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Device and Endpoint Security</h3><p class="text-slate-600">Help protect computers and devices through secure configuration, software updates and suitable endpoint protection.</p></div>
+      <div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-network-wired text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Network Security</h3><p class="text-slate-600">Improve network configuration, connected-device security and access controls. <a href="/network-monitoring-services" class="text-blue-600 font-semibold hover:underline">Explore network monitoring</a>.</p></div>
+      <div class="bg-slate-50 p-8 rounded-2xl shadow-sm"><i class="fa-solid fa-cloud-shield text-blue-600 text-4xl mb-5"></i><h3 class="text-xl font-bold mb-3">Cloud and Data Protection</h3><p class="text-slate-600">Strengthen cloud access, file permissions and data protection, supported by reliable <a href="/cloud-backup-recovery" class="text-blue-600 font-semibold hover:underline">backup and recovery</a>.</p></div>
+    </div>
+  </div>
 </section>
-
-
-
-
-
-
-
-
-
-<!-- BENEFITS -->
-
 
 <section class="py-20 bg-slate-50">
-
-
-<div class="max-w-7xl mx-auto px-6">
-
-
-<div class="text-center mb-12">
-
-
-<h2 class="text-3xl font-bold text-slate-900">
-Why Choose AYTechnology Cybersecurity?
-</h2>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="grid md:grid-cols-4 gap-8 text-center">
-
-
-
-
-
-
-<div>
-
-
-<i class="fa-solid fa-shield text-blue-600 text-4xl mb-4"></i>
-
-
-<h3 class="font-bold text-lg">
-Reduce Risk
-</h3>
-
-
-<p class="text-slate-600 mt-2">
-Strengthen your business against cyber threats.
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div>
-
-
-<i class="fa-solid fa-lock text-blue-600 text-4xl mb-4"></i>
-
-
-<h3 class="font-bold text-lg">
-Protect Data
-</h3>
-
-
-<p class="text-slate-600 mt-2">
-Keep sensitive information more secure.
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div>
-
-
-<i class="fa-solid fa-user-check text-blue-600 text-4xl mb-4"></i>
-
-
-<h3 class="font-bold text-lg">
-Improve Awareness
-</h3>
-
-
-<p class="text-slate-600 mt-2">
-Build safer technology habits within your business.
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div>
-
-
-<i class="fa-solid fa-headset text-blue-600 text-4xl mb-4"></i>
-
-
-<h3 class="font-bold text-lg">
-Expert Support
-</h3>
-
-
-<p class="text-slate-600 mt-2">
-Get assistance when security issues arise.
-</p>
-
-
-</div>
-
-
-
-
-
-</div>
-
-
-</div>
-
-
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12"><h2 class="text-3xl font-bold text-slate-900">Why Improve Your Business Cybersecurity?</h2></div>
+    <div class="grid md:grid-cols-4 gap-8 text-center">
+      <div><i class="fa-solid fa-triangle-exclamation text-blue-600 text-4xl mb-4"></i><h3 class="font-bold text-lg">Reduce Risk</h3><p class="text-slate-600 mt-2">Address common weaknesses before they become larger business problems.</p></div>
+      <div><i class="fa-solid fa-file-shield text-blue-600 text-4xl mb-4"></i><h3 class="font-bold text-lg">Protect Information</h3><p class="text-slate-600 mt-2">Improve how important files, accounts and customer information are protected.</p></div>
+      <div><i class="fa-solid fa-business-time text-blue-600 text-4xl mb-4"></i><h3 class="font-bold text-lg">Support Continuity</h3><p class="text-slate-600 mt-2">Reduce avoidable disruption by preparing systems, backups and recovery processes.</p></div>
+      <div><i class="fa-solid fa-people-group text-blue-600 text-4xl mb-4"></i><h3 class="font-bold text-lg">Build Safer Habits</h3><p class="text-slate-600 mt-2">Help users recognise common threats and follow safer technology practices.</p></div>
+    </div>
+  </div>
 </section>
-
-
-
-
-
-
-
-
-
-<!-- PROCESS -->
-
 
 <section id="process" class="py-20 bg-white">
-
-
-<div class="max-w-6xl mx-auto px-6">
-
-
-
-<div class="text-center mb-12">
-
-
-<h2 class="text-3xl font-bold text-slate-900">
-How It Works
-</h2>
-
-
-</div>
-
-
-
-
-
-
-<div class="grid md:grid-cols-3 gap-8">
-
-
-
-
-
-
-<div class="text-center">
-
-
-<div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">
-1
-</div>
-
-
-<h3 class="text-xl font-bold mb-3">
-Security Review
-</h3>
-
-
-<p class="text-slate-600">
-We review your current systems and identify security needs.
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="text-center">
-
-
-<div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">
-2
-</div>
-
-
-<h3 class="text-xl font-bold mb-3">
-Security Solutions
-</h3>
-
-
-<p class="text-slate-600">
-We recommend practical solutions to improve protection.
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-
-<div class="text-center">
-
-
-<div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">
-3
-</div>
-
-
-<h3 class="text-xl font-bold mb-3">
-Ongoing Protection
-</h3>
-
-
-<p class="text-slate-600">
-Receive continued support to help keep your business secure.
-</p>
-
-
-</div>
-
-
-
-
-
-</div>
-
-
-</div>
-
-
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-12"><h2 class="text-3xl font-bold text-slate-900">How Our Cybersecurity Process Works</h2></div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center"><div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">1</div><h3 class="font-bold text-xl mb-3">Understand Your Setup</h3><p class="text-slate-600">Tell us about your systems, users, concerns and current security measures.</p></div>
+      <div class="text-center"><div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">2</div><h3 class="font-bold text-xl mb-3">Prioritise Improvements</h3><p class="text-slate-600">We identify practical actions based on your risks, technology and business requirements.</p></div>
+      <div class="text-center"><div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-5">3</div><h3 class="font-bold text-xl mb-3">Strengthen and Maintain</h3><p class="text-slate-600">Implement suitable improvements and discuss ongoing support where required.</p></div>
+    </div>
+  </div>
 </section>
-<!-- COMMON CYBERSECURITY NEEDS -->
 
 <section class="py-20 bg-blue-600 text-white">
-
-    <div class="max-w-7xl mx-auto px-6">
-
-        <div class="text-center mb-12">
-
-            <h2 class="text-3xl font-bold">
-                Common Cybersecurity Risks We Help Address
-            </h2>
-
-            <p class="mt-4 text-lg text-blue-100 max-w-2xl mx-auto">
-                Practical security measures designed to help protect your accounts, devices and important business information.
-            </p>
-
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-8">
-
-            <div class="bg-blue-700 p-8 rounded-2xl">
-
-                <i class="fa-solid fa-envelope-circle-check text-blue-300 text-3xl mb-4"></i>
-
-                <h3 class="text-xl font-bold mb-3">
-                    Phishing and Suspicious Emails
-                </h3>
-
-                <p class="text-blue-100 leading-relaxed">
-                    Improve email security and help your team recognise suspicious links, attachments and impersonation attempts.
-                </p>
-
-            </div>
-
-            <div class="bg-blue-700 p-8 rounded-2xl">
-
-                <i class="fa-solid fa-user-lock text-blue-300 text-3xl mb-4"></i>
-
-                <h3 class="text-xl font-bold mb-3">
-                    Account and Password Security
-                </h3>
-
-                <p class="text-blue-100 leading-relaxed">
-                    Strengthen account access using secure password practices, multi-factor authentication and appropriate permissions.
-                </p>
-
-            </div>
-
-            <div class="bg-blue-700 p-8 rounded-2xl">
-
-                <i class="fa-solid fa-laptop-shield text-blue-300 text-3xl mb-4"></i>
-
-                <h3 class="text-xl font-bold mb-3">
-                    Device and Endpoint Protection
-                </h3>
-
-                <p class="text-blue-100 leading-relaxed">
-                    Help protect business computers and devices against malware, unauthorised access and security threats.
-                </p>
-
-            </div>
-
-            <div class="bg-blue-700 p-8 rounded-2xl">
-
-                <i class="fa-solid fa-database text-blue-300 text-3xl mb-4"></i>
-
-                <h3 class="text-xl font-bold mb-3">
-                    Data Protection and Recovery
-                </h3>
-
-                <p class="text-blue-100 leading-relaxed">
-                    Reduce the risk of data loss through secure backups, access controls and practical recovery planning.
-                </p>
-
-            </div>
-
-        </div>
-
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold">Common Cybersecurity Risks We Help Address</h2>
+      <p class="mt-4 text-lg text-blue-100 max-w-3xl mx-auto">Practical safeguards for the threats and weaknesses commonly affecting small and medium-sized businesses.</p>
     </div>
-
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-blue-700 p-8 rounded-2xl"><i class="fa-solid fa-fish-fins text-blue-300 text-3xl mb-4"></i><h3 class="text-xl font-bold mb-3">Phishing and Impersonation</h3><p class="text-blue-100 leading-relaxed">Reduce risks from deceptive emails, fake login pages, malicious attachments and messages pretending to be trusted contacts.</p></div>
+      <div class="bg-blue-700 p-8 rounded-2xl"><i class="fa-solid fa-user-secret text-blue-300 text-3xl mb-4"></i><h3 class="text-xl font-bold mb-3">Compromised Accounts</h3><p class="text-blue-100 leading-relaxed">Strengthen passwords, authentication and account permissions to reduce unauthorised access.</p></div>
+      <div class="bg-blue-700 p-8 rounded-2xl"><i class="fa-solid fa-bug-slash text-blue-300 text-3xl mb-4"></i><h3 class="text-xl font-bold mb-3">Malware and Unprotected Devices</h3><p class="text-blue-100 leading-relaxed">Improve device protection, patching and secure configuration to reduce exposure to malicious software and known vulnerabilities.</p></div>
+      <div class="bg-blue-700 p-8 rounded-2xl"><i class="fa-solid fa-database text-blue-300 text-3xl mb-4"></i><h3 class="text-xl font-bold mb-3">Data Loss and Weak Recovery</h3><p class="text-blue-100 leading-relaxed">Improve access controls, secure backups and recovery planning for important business information.</p></div>
+    </div>
+  </div>
 </section>
 
-
-
-
-
-
-
-
-
-<!-- CTA -->
-
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-start">
+    <div>
+      <p class="text-sm font-bold text-blue-600 uppercase tracking-widest mb-3">Local and Remote Security Support</p>
+      <h2 class="text-3xl font-bold text-slate-900">Cybersecurity Support Across Perth and Western Australia</h2>
+      <p class="mt-5 text-slate-600 leading-relaxed">AY Technology supports businesses across Perth, including Fremantle, Joondalup, Osborne Park, Rockingham and Mandurah. Many account, email, cloud and device-security tasks can be completed remotely, while suitable on-site work can be arranged depending on the requirement.</p>
+    </div>
+    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8">
+      <h3 class="text-xl font-bold text-slate-900 mb-5">Related Business Technology Services</h3>
+      <ul class="space-y-4">
+        <li><a href="/it-support-services" class="text-blue-600 font-semibold hover:underline">Managed IT support for Perth businesses →</a></li>
+        <li><a href="/cloud-backup-recovery" class="text-blue-600 font-semibold hover:underline">Cloud backup and recovery solutions →</a></li>
+        <li><a href="/network-monitoring-services" class="text-blue-600 font-semibold hover:underline">Remote network monitoring →</a></li>
+        <li><a href="/website-hosting-services" class="text-blue-600 font-semibold hover:underline">Website hosting and care →</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 <section class="bg-blue-600 text-white py-12 text-center">
-
-
-<h2 class="text-3xl font-bold mb-3">
-Protect Your Business Today
-</h2>
-
-
-<p class="text-lg mb-6">
-Get a cybersecurity consultation and discover ways to improve your digital protection.
-</p>
-
-
-
-
-<a href="#contact"
-class="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold">
-
-Request Security Assessment
-
-</a>
-
-
-
+  <h2 class="text-3xl font-bold mb-3">Ready to Strengthen Your Cybersecurity?</h2>
+  <p class="mb-6 text-lg">Tell us about your business and current security concerns.</p>
+  <a href="#contact" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold">Request a Security Assessment</a>
 </section>
-
-
-
-
-
-
-
-
-
-<!-- FAQ -->
-
 
 <section id="faq" class="py-20 bg-slate-50">
-
-
-<div class="max-w-4xl mx-auto px-6">
-
-
-<h2 class="text-3xl font-bold text-center mb-12">
-Frequently Asked Questions
-</h2>
-
-
-
-
-
-<div class="space-y-5">
-
-
-
-
-
-<details class="bg-white p-6 rounded-xl shadow-sm">
-
-
-<summary class="font-bold text-lg cursor-pointer">
-
-Why does my business need cybersecurity?
-
-</summary>
-
-
-<p class="mt-4 text-slate-600">
-
-Businesses of all sizes face online threats. Cybersecurity helps protect systems, customer information and important business data.
-
-</p>
-
-
-</details>
-
-
-
-
-
-
-
-
-<details class="bg-white p-6 rounded-xl shadow-sm">
-
-
-<summary class="font-bold text-lg cursor-pointer">
-
-Do you support small businesses?
-
-</summary>
-
-
-<p class="mt-4 text-slate-600">
-
-Yes. We provide cybersecurity solutions designed for small and growing businesses.
-
-</p>
-
-
-</details>
-
-
-
-
-
-
-
-
-<details class="bg-white p-6 rounded-xl shadow-sm">
-
-
-<summary class="font-bold text-lg cursor-pointer">
-
-Can you review our current security?
-
-</summary>
-
-
-<p class="mt-4 text-slate-600">
-
-Yes. We can review your current technology setup and recommend improvements.
-
-</p>
-
-
-</details>
-
-
-
-
-</div>
-
-
-</div>
-
-
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions About Cybersecurity</h2>
+    <div class="space-y-5">
+      <details class="bg-white p-6 rounded-xl shadow-sm"><summary class="font-bold text-lg cursor-pointer">Why does a small business need cybersecurity?</summary><p class="mt-4 text-slate-600">Small businesses rely on email, online accounts, cloud platforms and connected devices. Cybersecurity helps reduce the risk of unauthorised access, phishing, malware, data loss and business disruption.</p></details>
+      <details class="bg-white p-6 rounded-xl shadow-sm"><summary class="font-bold text-lg cursor-pointer">Can you review our current cybersecurity setup?</summary><p class="mt-4 text-slate-600">Yes. We can review suitable parts of your current setup and recommend practical improvements for accounts, devices, email, networks, cloud services and data protection.</p></details>
+      <details class="bg-white p-6 rounded-xl shadow-sm"><summary class="font-bold text-lg cursor-pointer">Do you help with phishing and email security?</summary><p class="mt-4 text-slate-600">Yes. We can help improve email security settings, strengthen account access and provide practical guidance for recognising suspicious links, attachments and impersonation attempts.</p></details>
+      <details class="bg-white p-6 rounded-xl shadow-sm"><summary class="font-bold text-lg cursor-pointer">Do you provide cybersecurity services in Perth?</summary><p class="mt-4 text-slate-600">Yes. AY Technology supports businesses across Perth and Western Australia. Many security reviews and configuration tasks can be completed remotely, with on-site assistance available for suitable work.</p></details>
+      <details class="bg-white p-6 rounded-xl shadow-sm"><summary class="font-bold text-lg cursor-pointer">Can cybersecurity remove every business risk?</summary><p class="mt-4 text-slate-600">No security measure can remove every risk. A layered approach using secure account settings, protected devices, backups, staff awareness and ongoing maintenance can significantly improve your security posture.</p></details>
+    </div>
+  </div>
 </section>
-
-
-
-
-
-
-
-
-
-<!-- CONTACT -->
-
 
 <section id="contact" class="py-20 bg-white">
-
-
-<div class="max-w-4xl mx-auto px-6">
-
-
-
-<div class="text-center mb-10">
-
-
-<h2 class="text-3xl font-bold text-slate-900">
-Improve Your Cybersecurity
-</h2>
-
-
-<p class="text-slate-600 mt-4">
-Contact AYTechnology to discuss your security requirements.
-</p>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="bg-white rounded-2xl shadow-xl border p-8">
-
-
-
-<form id="contact-form" class="space-y-5">
-
-
-
-
-
-<input type="hidden" name="service" value="Cybersecurity">
-
-
-
-
-
-<input
-
-type="text"
-
-name="name"
-
-required
-
-placeholder="Your Name"
-
-class="w-full px-5 py-3 border rounded-lg">
-
-
-
-
-
-
-<input
-
-type="email"
-
-name="email"
-
-required
-
-placeholder="Your Email"
-
-class="w-full px-5 py-3 border rounded-lg">
-
-
-
-
-
-
-<input
-
-type="text"
-
-name="company"
-
-placeholder="Business Name"
-
-class="w-full px-5 py-3 border rounded-lg">
-
-
-
-
-
-
-<input
-
-type="tel"
-
-name="phone"
-
-placeholder="Phone Number"
-
-class="w-full px-5 py-3 border rounded-lg">
-
-
-
-
-
-
-<textarea
-
-name="message"
-
-rows="5"
-
-required
-
-placeholder="Tell us about your cybersecurity needs..."
-
-class="w-full px-5 py-3 border rounded-lg"></textarea>
-
-
-
-
-<div class="cf-turnstile"
-                     data-sitekey="0x4AAAAAAD6Vo3rObkvgXX-0">
-                    </div>
-
-<button
-
-type="submit"
-
-class="w-full bg-blue-600 text-white py-4 rounded-lg font-bold hover:bg-blue-700">
-
-Send Enquiry
-
-</button>
-
-
-
-
-</form>
-
-
-</div>
-
-
-</div>
-
-
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-bold text-slate-900">Improve Your Business Cybersecurity</h2>
+      <p class="text-slate-600 mt-4">Contact AY Technology to discuss cybersecurity support for your business in Perth or through remote assistance across Australia.</p>
+    </div>
+    <div class="bg-white rounded-2xl shadow-xl border p-8">
+      <form id="contact-form" class="space-y-5">
+        <input type="hidden" name="service" value="Cybersecurity">
+        <input type="text" name="name" required placeholder="Your Name" class="w-full px-5 py-3 border rounded-lg">
+        <input type="email" name="email" required placeholder="Your Email" class="w-full px-5 py-3 border rounded-lg">
+        <input type="text" name="company" placeholder="Business Name" class="w-full px-5 py-3 border rounded-lg">
+        <input type="tel" name="phone" placeholder="Phone Number" class="w-full px-5 py-3 border rounded-lg">
+        <textarea name="message" rows="5" required placeholder="Tell us about your cybersecurity needs..." class="w-full px-5 py-3 border rounded-lg"></textarea>
+        <div class="cf-turnstile" data-sitekey="0x4AAAAAAD6Vo3rObkvgXX-0"></div>
+        <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-lg font-bold hover:bg-blue-700">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
 </section>
-
-
-
-
-
-
-
-
-
-<!-- SOCIAL MEDIA -->
-
 
 <section class="py-12 bg-slate-50">
-
-<div class="max-w-7xl mx-auto px-6 text-center">
-
-<h2 class="text-2xl font-bold text-slate-900 mb-6">
-Follow AYTechnology
-</h2>
-
-<p class="text-slate-600 mb-8">
-Stay updated with our latest technology solutions and business support services.
-</p>
-
-
-<div class="flex justify-center gap-5">
-
-
-<a href="https://www.facebook.com/profile.php?id=61591770420755&sk=directory_basic_info" 
-class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl hover:bg-blue-700 transition">
-<i class="fa-brands fa-facebook-f"></i>
-</a>
-
-
-
-<a href="https://www.linkedin.com/in/ay-technology-b42830421/" 
-class="w-12 h-12 bg-sky-500 text-white rounded-full flex items-center justify-center text-xl hover:bg-sky-600 transition">
-<i class="fa-brands fa-linkedin-in"></i>
-</a>
-
-
-
-
-
-
-
-<a href="https://www.instagram.com/aytech_support/" 
-class="w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center text-xl hover:bg-pink-700 transition">
-<i class="fa-brands fa-instagram"></i>
-</a>
-
-
-</div>
-
-
-</div>
-
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-2xl font-bold text-slate-900 mb-6">Follow AY Technology</h2>
+    <p class="text-slate-600 mb-8">Stay updated with our latest technology solutions and business support services.</p>
+    <div class="flex justify-center gap-5">
+      <a href="https://www.facebook.com/profile.php?id=61591770420755&sk=directory_basic_info" target="_blank" rel="noopener noreferrer" aria-label="AY Technology on Facebook" class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl hover:bg-blue-700 transition"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.linkedin.com/in/ay-technology-b42830421/" target="_blank" rel="noopener noreferrer" aria-label="AY Technology on LinkedIn" class="w-12 h-12 bg-sky-500 text-white rounded-full flex items-center justify-center text-xl hover:bg-sky-600 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/aytech_support/" target="_blank" rel="noopener noreferrer" aria-label="AY Technology on Instagram" class="w-12 h-12 bg-pink-600 text-white rounded-full flex items-center justify-center text-xl hover:bg-pink-700 transition"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
 </section>
-
-
-
-
-
-
-<!-- FOOTER -->
+</main>
 
 <footer class="bg-slate-950 text-slate-400 py-12 text-center">
-
-    <p class="text-sm">
-        © 2026 AY Technology. All rights reserved.
-    </p>
-
-    <a href="/privacy-policy"
-       class="text-xs hover:text-blue-400 mt-2 inline-block underline">
-        Privacy Policy
-    </a>
-
+  <p class="text-sm">© 2026 AY Technology. All rights reserved.</p>
+  <a href="/privacy-policy" class="text-xs hover:text-blue-400 mt-2 inline-block underline">Privacy Policy</a>
 </footer>
-
-
-
-
-
-
-
-
-
-<!--CLOUDWORKER REDIRECT -->
-
 
 <script>
 document.getElementById("contact-form").addEventListener("submit", async function(event) {
     event.preventDefault();
-
     const form = event.target;
     const button = form.querySelector('button[type="submit"]');
-
     const originalText = button.textContent;
     button.textContent = "Sending...";
     button.disabled = true;
-
     const formData = new FormData(form);
-
     try {
-        const response = await fetch("https://contct-api.jumaoasking.workers.dev", {
-            method: "POST",
-            body: formData
-        });
-
+        const response = await fetch("https://contct-api.jumaoasking.workers.dev", {method: "POST", body: formData});
         if (response.ok) {
             window.location.href = "https://aytechnology.net/thanks.html";
         } else {
             const error = await response.text();
             alert("Error: " + error);
-
             button.textContent = originalText;
             button.disabled = false;
         }
-
     } catch (err) {
         alert("Network error. Please try again.");
-
         button.textContent = originalText;
         button.disabled = false;
     }
 });
 </script>
-
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-
-
-
-
-
-
-
 </body>
-
 </html>
